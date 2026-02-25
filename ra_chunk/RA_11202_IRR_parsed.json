@@ -1,0 +1,272 @@
+{
+    "document_id": "RA_11202_IRR",
+    "title": "RULES AND REGULATIONS IMPLEMENTING REPUBLIC ACT NO. 11202 OTHERWISE KNOWN AS THE \"MOBILE NUMBER PORTABILITY ACT\"",
+    "date_approved": "June 11, 2019",
+    "source": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96762",
+    "chunks": [
+        {
+            "chunk_index": 1,
+            "text": "[ IRR of REPUBLIC ACT NO. 11202, June 11, 2019 ]\n\nRULES AND REGULATIONS IMPLEMENTING REPUBLIC ACT NO. 11202 OTHERWISE KNOWN AS THE \"MOBILE NUMBER PORTABILITY ACT\"\n\nWHEREAS,\n\nSection 24, Article II of the 1987 Philippine Constitution declares that the State recognizes the vital role of communication and information in nation-building;\n\nWHEREAS,",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 2,
+            "text": "Sec. 11 of Republic Act No. 11202 (RA 11202), otherwise known as the\n\n\"Mobile Number Portability Act,\"\n\nprovides\n\n\"Within ninety (90) days from the effectivity of this Act, the NTC, as the government entity mandated to implement nationwide MNP, shall coordinate with the Department of Information and Communications Technology, the National Privacy Commission, the Philippine Competition Commission, and other concerned agencies, and promulgate rules and regulations and other issuances as may be necessary to ensure the effective implementation of this Act\";\n\nNOW, THEREFORE,\n\npursuant to Republic Act No. 7925 (RA 7925), Executive Order No. 546 series of 1979 (EO 546) and RA 11202, after due consideration of the comments, recommendations, and position papers received in the course of the requisite public hearing, the following implementing rules and regulations (IRR) are hereby promulgated:",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 3,
+            "text": "SECTION 1. Definition of Terms\n\n1.1.1 Commission\n\nrefers to the National Telecommunications Commission;\n\n1.1.2 Cutover Period\n\nrefers to the date and time when a subscriber who submitted a porting application will have no mobile telecommunications service while the porting process is being completed. The period shall not exceed four (4) hours;\n\n1.1.3 Donor Provider\n\nor\n\nDP\n\nrefers to the mobile service provider to whose network the mobile number belongs at the time the subscriber submits a porting application;\n\n1.1.4 Hours\n\nrefers to the time reckoned from midnight to midnight and not business hours;\n\n1.1.5 Local Number Portability Database\n\nrefers to the database of all ported mobile numbers maintained by a Mobile Service Provider;\n\n1.1.6 Mobile Number\n\nrefers to the number series assigned by a mobile service provider to its subscriber;\n\n1.1.7 Mobile Number Portability\n\nor\n\nMNP\n\nrefers to the ability of a mobile postpaid pr prepaid subscriber, who has no existing financial obligation to the Donor Provider, to retain an existing mobile number despite having moved from one mobile service provider to another,\n\n1.1.8 Mobile Number Portability Service Provider\n\nor\n\nMNPSP",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 4,
+            "text": "1.1.8 Mobile Number Portability Service Provider\n\nor\n\nMNPSP\n\nrefers to the entity that provides mobile number porting services as set out in Section 3 hereof;\n\n1.1.9 Mobile Postpaid Subscriber\n\nrefers to any person, natural or juridical, who avails of the mobile telecommunications service under a prior arrangement with a mobile service provider. The subscriber is billed after the fact, according to the use of mobile telecommunications services at the end of the monthly billing cycle;\n\n1.1.10 Mobile Prepaid Subscriber\n\nrefers to any person, natural or juridical, who avails of the mobile telecommunications services from a mobile service provider by purchasing credit in advance of service use. The purchased credit is used to pay for mobile telecommunications services at the point the service is accessed or consumed;\n\n1.1.11 Mobile Service Provider\n\nor\n\nMSP\n\nrefers to a public telecommunications entity or a virtual network operator, or any entity that provides mobile telecommunications service to subscribers;\n\n1.1.12 Number Portability Database",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 5,
+            "text": "1.1.12 Number Portability Database\n\nrefers to the database maintained by the Mobile Number Portability Service Provider in electronic form, holding the details of all ported mobile numbers,\n\n1.1.13 Porting Application\n\nrefers to an application submitted by a subscriber to a mobile service provider to avail of MNP;\n\n1.1.14 Porting Process\n\nrefers to the process by which a donor provider moves a mobile number to a recipient provider or changes the type of subscription from postpaid to prepaid or vice versa. In no case shall the entire porting process take more than forty-eight (48) hours;\n\n1.1.15 Public Telecommunications Entity\n\nor\n\nPTE\n\nrefers to any duly authorized public telecommunications entity that offers voice, short messaging system (SMS or text), mobile data, value added service (VAS), or any other mobile telecommunications services to the public for a fee;\n\n1.1.16 Recipient Provider\n\nor\n\nRP\n\nrefers to the mobile service provider that shall provide mobile telecommunications service to the subscriber after the porting process;\n\n1.1.17 Routing Number\n\nrefers to the code assigned to every mobile network provider for the purpose of implementing Mobile Number Portability;",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 6,
+            "text": "1.1.17 Routing Number\n\nrefers to the code assigned to every mobile network provider for the purpose of implementing Mobile Number Portability;\n\n1.1.18 Subscriber\n\nrefers to any person, natural or juridical, who avails of mobile telecommunications service from a mobile service provider; and\n\n1.1.19 Virtual Network Operator\n\nor\n\nVNO\n\nrefers to an entity that offers telecommunications service to the public under its own brand, but utilizes the network of another authorized PTE.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 7,
+            "text": "Sec. 2. Interpretation\n\n2.1 Any doubt in the interpretation of this Memorandum Circular shall be liberally interpreted in a manner mindful of the rights and interests of the subscriber availing of MNP.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 8,
+            "text": "Sec. 3. Mobile Number Portability Service Provider\n\n3.1 There shall be one (1) Mobile Number Portability Service Provider (MNPSP) that will provide mobile number porting services for the MSPs.\n\n3.2 The MNPSP shall be chosen by the MSPs not later than one hundred twenty (120) days from the effectivity of this Memorandum Circular.\n\n3.3 The MSPs shall equally share the capital expenditure for the software, hardware and other facilities required by the MNPSP.\n\n3.4 The sharing of the operating and maintenance costs of the MNPSP shall be agreed upon by the MSPs and the MNPSP.\n\n3.5 The MNPSP shall process and approve the onboarding of a new MSP within thirty (30) days from the submission of the new MSP's application to avail of the mobile number porting services. The new MSP, that enters the market after the MNPSP has been chosen and after an agreement between the MNPSP and incumbent MSPs has been signed, shall become a party to the agreement between the MNPSP and incumbent MSPs in order to participate in the sharing of capital expenditure and operating and maintenance costs of the porting services.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 9,
+            "text": "3.6 The MNPSP shall have the same rates, fees and access for porting services for all participating MSPs.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 10,
+            "text": "Sec. 4. Routing Number for MNP\n\n4.1 The following routing numbers for MNP shall be assigned:\n\nMobile Network Provider\n\nRouting Number\n\nGlobe Telecom, Inc.\n\n0587\n\nSmart Communications, Inc.\n\n0588\n\nReserved\n\n0585, 0586, 0589\n\n4.2 Reserved Routing Numbers shall be assigned by the Commission to new MSPs.\n\n4.3 The routing number shall be used to route the calls to the ported number and shall not change the ported number of the subscriber.\n\nSec. 5. Qualification of Applicants for MNP\n\n5.1 Every subscriber applying for MNP service shall have the following qualifications:\n\n5.1.1 The subscriber does not have any outstanding financial obligation with the Donor Provider (DP).\n\n5.1.2 The subscriber is the assignee of the mobile number used in a device that is not locked to any MSP.\n\n5.1.3 A period of sixty (60) calendar days has lapsed from the date of activation of the ported number.\n\n5.1.4 The subscriber has no pending request for transfer of assignment of the mobile number.\n\n5.1.5 No prohibition from a court of law for the porting of the mobile number.\n\n5.1.6 The subscriber is not blacklisted by a MSP due to previous fraudulent activities.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 11,
+            "text": "Sec. 6. Procedure in Applying for MNP\n\n6.1 Procedure in applying for MNP from one mobile network to another:\n\n6.1.1 The subscriber shall request from DP a 9-digit unique subscriber code (USC) which is valid for fifteen (15) days from date of issuance. The USC and the mobile phone number should match.\n\nThe subscriber shall submit porting application (PA) with valid USC to avail of MNP to Recipient Provider (RP) in person/a duly authorized representative, or online, or through SMS via a 5-digit access code assigned by the MSPs for porting applications.\n\n6.1.2 Upon receipt of the PA, the RP shall immediately transmit the PA to the DP through the MNPSP.\n\n6.1.3 Within twenty-four (24) hours from receipt of PA, the DP shall:\n\n6.1.3.1 Transmit the clearance to the RP through the MNPSP if the USC is matched with the mobile number; or\n\n6.1.3.2 Inform the RP through the MNPSP that the PA is rejected on any of the grounds stated in Sec. 12 of this IRR; or\n\n6.1.3.3 Notify the RP through the MNPSP that the applicant has a confirmed USC but outstanding financial obligation.\n\nThe RP through the MNPSP shall immediately notify the applicant of his/her outstanding financial obligation with the DP.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 12,
+            "text": "The RP through the MNPSP shall immediately notify the applicant of his/her outstanding financial obligation with the DP.\n\nThe applicant is given a period of three (3) working days upon receipt of notice to settle the outstanding financial obligation. Upon full payment, the DP shall immediately transmit clearance to the RP through the MNPSP.\n\nIf after three (3) working days, the outstanding financial obligation is not settled, the DP shall notify the RP through the MNPSP of non-payment. The RP shall immediately inform the applicant of the rejection of the PA.\n\n6.1.4 Within twenty-four (24) hours from receipt of clearance from the DP, the RP shall activate the applicant's ported number and immediately inform the applicant and the MNPSP of the activation of the ported number.\n\n6.1.5 The MNPSP shall immediately broadcast the activation of the ported number to all MSPs.\n\n6.1.6 The porting process shall be completed within forty-eight (48) hours from the time of submission of the PA with the RP to the activation of the porter number. The 48-hour period shall not include the time given to the applicant to settle his/her outstanding financial obligation with the DP.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 13,
+            "text": "6.2 Procedure in applying MNP from postpaid service to prepaid service and vice versa within the same mobile network:\n\n6.2.1 A subscriber shall submit PA to the concerned MSP.\n\n6.2.2 The type of service subscription shall be changed from postpaid to prepaid or vice versa within twenty-four (24) hours from the time of the submission and acceptance of application.\n\n6.2.3 The change of service from prepaid to postpaid shall be subject to the acceptance in accordance with the MSP's existing policies.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 14,
+            "text": "Sec. 7. Obligations of Public Telecommunications Entities\n\n7.1 Every Public Telecommunications Entity (PTE) shall:\n\n7.1.1 Facilitate, in its entire network, PAs from all subscribers on a nondiscriminatory manner.\n\n7.1.2 Provide nationwide MNP service to all qualified subscribers free of charge.\n\n7.1.3 Provide MNP service to subscribers within the prescribed period as set forth in this IRR.\n\n7.1.4 Ensure that the mobile number porting process for postpaid subscribers is separate from the approval process of new mobile subscription plan.\n\n7.1.5 Interconnect directly or indirectly with the infrastructure, facilities, systems, or equipment of other PTEs and not install network features, functions or capabilities that will impede the implementation of the nationwide MNP system.\n\n7.1.6 Facilitate the number porting process of Virtual Network Operator (VNO) that it is hosting in its network, upon receipt of the request for MNP service from the subscribers of the VNO.\n\n7.1.7 Provide subscribers complete, relevant, and timely information on MNP including its features, the PA requirements, the porting process and the cutover period in the porting process.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 15,
+            "text": "7.1.8 Maintain confidentiality of information obtained by not monitoring or disclosing the contents of any usage transaction, contained within the databases under its control, except to the extent necessary to comply with the provisions of RA 11202.\n\n7.1.9 Adhere to the provisions of RA 10173, otherwise known as the \"Data Privacy Act of 2012\", its IRR and and issuances of the National Privacy Commission in the processing or handling of the subscribers' personal data, and provide the necessary safeguards to protect the same in the course of porting activities.\n\n7.1.10 Ensure the selection of MNPSP within the prescribed period of one hundred twenty (120) days from the effectivity of the Memorandum Circular.\n\n7.1.11 Ensure that the chosen MNPSP maintains uninterrupted quality service provided to subscribers availing MNP services.\n\n7.1.12 Unlock the mobile phone and device pursuant to Memorandum Circular No. 01-05-2019, Rules and Regulations on Unlocking of Mobile Phones and Devices.\n\n7.1.13 Conduct public awareness campaign informing the general public about MNP.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 16,
+            "text": "Sec. 8. Obligations of the Recipient Provider\n\n8.1 The Recipient Provider (RP) shall:\n\n8.1.1 Accept PA submitted by applicant for MNP service or duly authorized representative.\n\n8.1.2 Immediately transmit the PA, upon receipt, to the DP through the MNPSP. If the applicant is a VNO, the RP shall transmit the PA to the host PTE through the MNPSP.\n\n8.1.3 Activate the ported number within twenty-four (24) hours from receipt of clearance from DP through the MNPSP.\n\n8.1.4 Immediately inform the applicant, upon receipt of information from the DP through the MNPSP, that the applicant has outstanding financial obligation with the DP.\n\n8.1.5 Not discriminate subscribers of ported numbers from the other subscribers as to the quality of service.\n\n8.1.6 Assist the DP from collecting unsettled roaming charges that were not considered when the clearance was released because of late transmission of the roaming charges by roaming partners of the DP.\n\n8.1.7 Inform the applicant of the rejection of the PA stating the reason for rejection within twenty-four (24) hours from time of receipt and acceptance of application.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 17,
+            "text": "8.1.8 Pay the MNPSP per porting transaction charge at agreed rate and period of payment.\n\n8.1.9 If the subscriber of ported number fails to settle his/her outstanding obligation within sixty (60) days from being informed of such obligation, the RP shall terminate the service subscription and request the MNPSP to return the mobile number to the assignee of the Number Range.\n\n8.1.10 Ensure that all information supplied by its subscribers with ported numbers are kept secured and strictly confidential.\n\n8.1.11 Ensure that the chosen MNPSP maintains uninterrupted quality service provided to subscribers availing MNP services.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 18,
+            "text": "Sec. 9. Obligation of the Donor Provider\n\n9.1 The DP shall, upon request from subscriber and after verifying that: a) the subscriber is the assignee of the mobile number used in a device that is not locked, b) there is no pending request for transfer of assignment of the mobile number, c) subscriber is not blacklisted due to previous fraudulent activities, and d) no prohibition from a court of law for the porting of the mobile number of the mobile number, issue USC valid for fifteen (15) calendar days from date of issuance.\n\n9.2 The DP shall, within twenty-four (24) hours from receipt of the PA with the USC indicated therein from the RP through MNPSP:\n\n9.1.1 Confirm that the USC is valid.\n\n9.1.2 Transmit clearance to the RP through the MNPSP provided that the applicant does not have any outstanding financial obligation. If the DP is a VNO, it shall first secure clearance from the host PTE.\n\n9.1.3 Notify the RP through the MNPSP if the applicant has any outstanding financial obligation.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 19,
+            "text": "9.1.3 Notify the RP through the MNPSP if the applicant has any outstanding financial obligation.\n\n9.1.4 If the applicant has outstanding financial obligation, inform the applicant that he/she has three (3) working days to settle the outstanding financial obligation. Upon full payment, the DP shall immediately transmit the clearance to the RP through the MNPSP.\n\nIf after three (3)working days, the outstanding financial obligation is not settled, the DP shall notify the RP through the MNPSP of non-settlement.\n\nIf the payment for the settlement of the outstanding financial obligation is done through banks or bills payment centers, the confirmation of payment shall be received by the DP within three (3) working days from the date of payment.\n\n9.3 The DP shall continue to provide telecommunications services for postpaid subscribers and to prepaid subscribers with sufficient prepaid loads, until the cutover period.\n\n9.4 The DP shall not impose conditions and procedures for contract termination or for completion of the PA which have the effect of serving as disincentive or deterrent against moving to different mobile service provider.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 20,
+            "text": "9.5 The DP shall not use the information obtained From porting activities to persuade the subscriber to cancel or delay a PA.\n\n9.6 The DP shall transmit to the RP through the MNPSP information supplied by the applicant when said applicant for subscription for MNP within twenty-four (24) hours from activation of the ported number. Once transmitted to the RP, the subscriber information shall be deleted from the database of the DP.\n\n9.7 The DP shall ensure the information supplied by its subscribers including subscribers with ported numbers are secured and kept strictly confidential.\n\n9.8 Upon disconnection of a mobile number, the DP shall refund to the subscriber all amounts due to such subscriber on account of refundable payments or deposits made by such subscriber to the DP, if any.\n\n9.9 The DP shall maintain a list of all mobile numbers ported out by it and all mobile numbers for which PAs have been rejected by it for at least period of six (6) months from the date of porting or the date of rejection of application.\n\n9.10 Ensure that the chosen MNPSP maintains uninterrupted quality service provided to subscribers availing MNP services.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 21,
+            "text": "Sec. 10. Obligations of the Mobile Number Portability Service Provider\n\n10.1 The Mobile Number Portability Service Provider (MNPSP) shall:\n\n10.1.1 Submit copy of its agreement with the MSPs and any amendment thereto to the Commission within ten (10) workings days from conclusion of the agreement.\n\n10.1.2 Maintain and ensure that the records in the Number Portability Database are kept secure and confidential. The history of porting transactions shall be maintained for six (6) months. Records of porting transactions shall be maintained beyond six (6) months. Records of porting transactions shall be maintained beyond six (months) upon request from competent government agencies through the Commission.\n\n10.1.3 Upon receipt of a PA,\n\n10.1.3.1 Verify if the mobile number has pending application and, if verified, immediately inform the RP; if not, immediately transmit to the DP;\n\n10.1.3.2 Verify if the mobile number has been ported less than sixty (60) calendar days from date of last porting and, if verified, immediately inform the RP; if not, immediately transmit to the DP.\n\n10.1.4 Upon receipt of the clearance from the DP, immediately transmit the clearance to the RP.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 22,
+            "text": "10.1.4 Upon receipt of the clearance from the DP, immediately transmit the clearance to the RP.\n\n10.1.5 Activate the ported number within twenty-four (24) hours from receipt of clearance from the DP.\n\n10.1.6 Exert all efforts to facilitate the expeditious porting of mobile numbers through effective coordination with the DP and RP.\n\n10.1.7 Use the records in the Number Portability Database only for the purpose of porting and not for any other purpose.\n\n10.1.8 Upon receipt of information on the permanent disconnection of a ported mobile number, remove the mobile number from the Number Portability Database and return the mobile number to the assignee of the Number Range.\n\n10.1.9 Enter into agreement with the MSP. The agreement shall include, among others, the capital expenditure which shall be equally shared by all MSPs, per porting transaction charge/fee to be paid by the RP, manner of payment, and quality of service.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 23,
+            "text": "10.1.10 Allocate the corresponding assigned Routing Number to the ported number in the Number Portability Database and broadcast the updated Routing Number along with the ported mobile number to all MSPs who shall update their respective Local Number Portability Database.\n\n10.1.11 Maintain uninterrupted quality service provided to subscribers availing MNP services.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 24,
+            "text": "Sec. 11. MNP and Interconnection Fees/Charges\n\n11.1 a) No fees and charges shall be collected from the applicants for MNP.\n\nb) No fees and charges related to the MNP service shall be collected from the subscribers.\n\nc) The MNPSP per port transaction charges at agreed rates and period of payment shall be borne by the RP. To prevent abuse, the MNPSP may impose restrictions based on its analysis of the traffic subject to the approval of the Commission.\n\n11.2 No interconnection fee or charge shall be imposed by any MSP for domestic calls and SMS made by a subscriber.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 25,
+            "text": "Sec. 12. Grounds for Rejection of Application for MNP\n\n12.1 An applicant for porting of a mobile number shall be rejected on any of the following grounds:\n\n12.1.1 The subscriber has an outstanding financial obligation with the DP ro blacklisted by the DP due to previous fraudulent activities;\n\n12.1.2 A request for the transfer of assignment of the mobile number is under process;\n\n12.1.3 Porting of the mobile number has been prohibited by a court order, by law, or rules and obligations issued by the Commission;\n\n12.1.4 The PA submitted is within sixty (60) calendar days from the date of activation of the ported number.\n\n12.1.5 The mobile number to be ported is part of a bundled service or product;\n\n12.1.6 The mobile number to be ported is the principal contact number in an account with multiple numbers; and\n\n12.1.7 The applicant provided invalid USC or does not match the applicant's mobile number.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 26,
+            "text": "Sec. 13. Withdrawal of Application for MNP\n\n13.1 A subscriber may, before the transmission from the DP of any clearance or information on the application for porting, withdraw such application by informing the RPin writing which can be submitted in person or online.\n\n13.2 In case the RP has already forwarded the PA to the DP through the MNPSP, before receipt of the withdrawal from the applicant, the RP through the MNPSP shall immediately inform the DP of the withdrawal from the applicant, the RP through the MNPSP shall immediately inform the DP of the withdrawal of the application.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 27,
+            "text": "Sec. 14. Dispute Resolution\n\n14.1 Dispute between two or more persons (\"the parties\") regarding any matter on MNP shall first be attempted to be resolved by the parties within thirty (30) calendar days.\n\n14.2 After the 30-day period and the dispute is not settled, the Commission shall mediate. The mediation shall be done within thirty (30) calendar days.\n\n14.3 If mediation fails, the parties may seek resolution of the dispute by the Commission.\n\n14.4 The dispute resolution process shall be:\n\n14.4.1 The party seeking recourse from the Commission for the resolution of the dispute (\"the Claimant\") shall submit to the Commission and serve on the other party in the dispute (\"the Responder\") a notification of dispute. The Notification of Dispute shall include the following:\n\na) A demand that the dispute be referred to the Commission for resolution;\n\nb) The names and addresses of the parties;\n\nc) A reference to the specific provision of RA 11202, Mobile Number Portability Act, and its Implementing Rules and Regulations, nature of the claim, relief or remedy sought; and\n\nd) Proof of previous attempts to resolve the dispute by negotiation between the parties.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 28,
+            "text": "d) Proof of previous attempts to resolve the dispute by negotiation between the parties.\n\n14.4.2 The Commission shall, within seven (7) calendar days from the date of receipt of the Notification of Dispute, hold a preliminary inquiry to determine as to whether the claim merits the Commission to convene and resolve the dispute.\n\n14.4.3 The Commission shall convene and resolve the dispute if the Commission is convinced that:\n\na) An agreement will not be reached between the parties or will not be reached within a reasonable time;\n\nb) The dispute is not trivial, frivolous or vexatious; and\n\nc) The resolution of the dispute would promote the objectives of the MNP Act.\n\n14.4.4 Upon the conclusion of the Preliminary Inquiry, the Commission shall inform the parties in writing of its decision as to whether it will convene to resolve the dispute or not. If not, the process ends.\n\n14.4.5 Within fourteen (14) days from the date of the receipt of the Notice from the Commission, the Respondent shall submit its Reply.\n\n14.4.6 In reply, the Respondent may make a counterclaim arising out of the same matter.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 29,
+            "text": "14.4.6 In reply, the Respondent may make a counterclaim arising out of the same matter.\n\n14.4.7 Within fourteen (14) working days from the date of his receipt of the Respondent's Reply and counterclaim or such other period to be determined by the Commission, the Claimant shall submit his/her reply to the Counterclaim, if any, to the Commission and shall serve a copy of the same to the Respondent.\n\n14.4.8 The parties shall have the burden of proving the facts relied on to support their respective claim or reply/counterclaim.\n\n14.4.9 The Commission may, at any time before deciding on the dispute, require relevant individuals to appear before the Commission to respond to queries and/or to give clarifications that the Commission may require. The admissibility, relevance, materiality and weight of any of the information gathered shall be determined by the Commission.\n\n14.4.10 The Commission may decide on the dispute based only on the written submissions and evidence presented to it by the parties. In such an instance the Commission shall, where practicable, come to a decision within thirty (30) days from the date of its receipt of the last written submission by the parties.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 30,
+            "text": "14.4.11 The Commission shall provide the parties with a copy of its decision as soon as practicable.\n\n14.4.12 The Commission's decision shall be binding on the parties.\n\n14.4.13 Unless otherwise agreed by the parties, the final decisions shall be issued withi the period of 90 to 150 calendar days from the date of submission of the Notice of Dispute. This period may be extended by the Commission if circumstances so warrant and/or of the Commission deems it fit to do so.\n\n14.4.14 The Commission shall conduct the dispute resolution proceedings with a view to expedite the resolution of the dispute. The Commission may instruct parties to attend a preliminary conference and schedule subsequent steps in the proceedings. The Commission may state in advance what evidence would be needed to establish proof of complex facts, exclude or limit irrelevant evidence, and proceed by successive determination of issues, in order to expedite the proceedings.\n\n14.4.15 The Commission may take measures to protect trade secrets and confidential information.\n\n14.4.16 The Dispute Resolution Proceeding shall be held in the Central Office of the Commission.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 31,
+            "text": "Sec. 15. Administrative Fines and Penalties\n\n15.1 The Commission upon consultation of due process shall impose:\n\n15.1.1 A fine of PHP10,000.00 where portability is not performed within the periods allowed under the Act, but delivered by the MSP on or before the complaint under Section 14 of this IRR is filed, or delivered after and in accordance with agreements arrived at under Sec. 14.1 and Sec. 14.2 of this IRR.\n\n15.1.2 A fine of not less than PHP40,000 where MNP is unjustly refused even after mediation.\n\n15.1.3 A fine of not less than PHP100,000.00 up to PHP300,000.00 for the second and fourth instance where MNP is unjustly refused even after mediation.\n\n15.1.4 A fine of not less than PHP400,000.00 up to PHP1,000,000.00 and revocation of PTE's franchise to operate for the fifth and subsequent instances where MNP is unjustly refused even after mediation.\n\n15.2 In case where the MSP is a VNO, and is proven that if failed to comply with any of its obligations, including delay in the transmission of porting requests to its host PTE or unjust refusal to process a MNP service request from its subscribers, the same penalties specified in Sec. 15.1 hereof shall apply.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 32,
+            "text": "15.3 In case it is proven that the host PTE delayed or unjustly refused to process a porting request transmitted by a VNO, the host PTE shall be solidarily liable for such offense and the same penalties specified in Sec. 15.1 hereof shall apply.\n\n15.4 Subscribers shall be awarded not more than PHP40,000.00 in damages.",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        },
+        {
+            "chunk_index": 33,
+            "text": "Sec. 16. Repealing Clause\n\n16.1 Any circular, order, memoranda or parts thereof inconsistent herewith are deemed repealed or amended accordingly.\n\nSec. 17. Separability Clause\n\n17.1 If any section or part of this MC is held unconstitutional or invalid, the other sections or provisions not otherwise affected shall remain in full force and effect.\n\nSec. Effectivity Clause\n\n18.1 This Circular shall take effect fifteen (15) days after publication in a newspaper of general circulation and three (3) certified true copies furnished the University of the Philippines Law Center.\n\nQuezon City, Philippines.\n\nDone this\n\n11\n\nth\n\nday of June 2019.\n\n(SGD.)\n\nGAMALIEL ASIS CORDOBA\n\nCommissioner\n\n(SGD.)\n\nEDGARDO V. CABARIOS\n\n(SGD.)\n\nDELILAH F. DELES\n\nDeputy Commissioner\n\nDeputy Commissioner",
+            "metadata": {
+                "law_id": "RA_11202_IRR",
+                "date": "June 11, 2019"
+            }
+        }
+    ]
+}

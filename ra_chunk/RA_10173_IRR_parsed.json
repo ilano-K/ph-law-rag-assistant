@@ -1,0 +1,848 @@
+{
+    "document_id": "RA_10173_IRR",
+    "title": "IMPLEMENTING RULES AND REGULATIONS OF REPUBLIC ACT NO. 10173, KNOWN AS THE âDATA PRIVACY ACT OF 2012â",
+    "date_approved": "August 24, 2016",
+    "source": "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/70735",
+    "chunks": [
+        {
+            "chunk_index": 1,
+            "text": "[ IRR OF REPUBLIC ACT NO. 10173, August 24, 2016 ]\n\nIMPLEMENTING RULES AND REGULATIONS OF REPUBLIC ACT NO. 10173, KNOWN AS THE âDATA PRIVACY ACT OF 2012â\n\nPursuant to the mandate of the National Privacy Commission to administer and implement the provisions of the Data Privacy Act of 2012, and to monitor and ensure compliance of the country with international standards set for data protection, the following rules and regulations are hereby promulgated to effectively implement the provisions of the Act:\n\nRule I. Preliminary Provisions\n\n1. Title\n\n2. Policy\n\n3. Definitions\n\nRule II. Scope of Application\n\n4. Scope\n\n5. Special Cases\n\n6. Protection afforded to data subjects\n\n7. Protection afforded to journalists and their sources\n\nRule III. National Privacy Commission\n\n8. Mandate\n\n9. Functions\n\n10. Administrative Issuances\n\n11. Reports and Public Information\n\n12. Confidentiality of Personal Data\n\n13. Organizational Structure\n\n14. Secretariat\n\n15. Effect of Lawful Performance of Duty\n\n16. Magna Carta for Science and Technology Personnel",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 2,
+            "text": "Rule IV. Data Privacy Principles\n\n17. General Principles\n\n18. Principles of Transparency, Legitimate Purpose and Proportionality\n\n19. Principles in Collection, Processing and Retention\n\na. Collection must be for a specified and legitimate purpose\n\nb. Personal Data shall be processed fairly and lawfully\n\nc. Processing should ensure data quality\n\nd. Personal data shall not be retained longer than necessary\n\ne. Any authorized further processing shall have adequate safeguards\n\n20. Principles for Data Sharing\n\nRule V. Lawful Processing of Personal Data\n\n21. Lawful Processing of Personal Information\n\n22. Lawful Processing of Sensitive Personal Information and Privileged Information\n\n23. Extension of Privileged Communication\n\n24. Surveillance of Subjects and Interception of Recording of Communications\n\nRule VI. Security Measures for Protection of Personal Data\n\n25. Data Privacy and Security\n\n26. Organizational Security\n\n27. Physical Security\n\n28. Technical Security\n\n29. Appropriate Level of Security",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 3,
+            "text": "Rule VII. Security of Sensitive Personal Information in Government\n\n30. Responsibility of Heads of Agencies\n\n31. Requirements Relating to Access by Agency Personnel to Sensitive Personal Information\n\n32. Implementation of Security Requirements\n\n33. Applicability to Government Contractors\n\nRule VIII. Rights of Data Subject\n\n34. Rights of the Data Subject\n\na. Right to be informed\n\nb. Right to object\n\nc. Right to access\n\nd. Right to correct\n\ne. Right to rectification, erasure or blocking\n\n35. Transmissibility of Rights of the Data Subject\n\n36. Right to Data Portability\n\n37. Limitation on Rights\n\nRule IX. Data Breach Notification.\n\n38. Data Breach Notification\n\n39. Contents of Notification\n\n40. Delay of Notification\n\n41. Breach Report\n\n42. Procedure for Notification\n\nRule X. Outsourcing and Subcontracting Agreements.\n\n43. Subcontract of Personal Data\n\n44. Agreements for Outsourcing\n\n45. Duty of Personal Information Processor\n\nRule XI. Registration and Compliance Requirements\n\n46. Enforcement of the Data Privacy Act\n\n47. Registration of Data Processing Systems\n\n48. Notification for Automated Processing Operations\n\n49. Review by the Commission",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 4,
+            "text": "Rule XII. Rules on Accountability\n\n50. Accountability for Transfer of Personal Information\n\n51. Accountability for Violation of the Act, these Rules and other issuances\n\nRule XIII. Penalties\n\n52. Unauthorized Processing of Personal Information and Sensitive Personal Information\n\n53. Accessing Personal Information and Sensitive Personal Information Due to Negligence\n\n54. Improper Disposal of Personal Information and Sensitive Personal Information\n\n55. Processing of Personal Information and Sensitive Personal Information for Unauthorized Purposes\n\n56. Unauthorized Access or Intentional Breach\n\n57. Concealment of Security Breaches Involving Sensitive Personal Information\n\n58. Malicious Disclosure\n\n59. Unauthorized Disclosure\n\n60. Combination or Series of Acts\n\n61. Extent of Liability\n\n62. Large-Scale\n\n63. Offense Committed by Public Officer\n\n64. Restitution\n\n65. Fines and Penalties\n\nRule XIV. Miscellaneous Provisions\n\n66. Appeal\n\n67. Period for Compliance\n\n68. Appropriations Clause\n\n69. Interpretation\n\n70. Separability Clause\n\n71. Repealing Clause\n\n72. Effectivity Clause\n\nRule I. Preliminary Provisions",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 5,
+            "text": "Rule I. Preliminary Provisions\n\nSection 1.\n\nTitle.\n\nThese rules and regulations shall be known as the âImplementing Rules and Regulations of the Data Privacy Act of 2012â, or the âRulesâ.\n\nSection 2.\n\nPolicy.\n\nThese Rules further enforce the Data Privacy Act and adopt generally accepted international principles and standards for personal data protection. They safeguard the fundamental human right of every individual to privacy while ensuring free flow of information for innovation, growth, and national development. These Rules also recognize the vital role of information and communications technology in nation-building and enforce the Stateâs inherent obligation to ensure that personal data in information and communications systems in the government and in the private sector are secured and protected.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 6,
+            "text": "Section 3.\n\nDefinitions.\n\nWhenever used in these Rules, the following terms shall have the respective meanings hereafter set forth:\n\nâActâ refers to Republic Act No. 10173, also known as the Data Privacy Act of 2012;\n\nâCommissionâ refers to the National Privacy Commission;\n\nâConsent of the data subjectâ refers to any freely given, specific, informed indication of will, whereby the data subject agrees to the collection and processing of his or her personal, sensitive personal, or privileged information. Consent shall be evidenced by written, electronic or recorded means. It may also be given on behalf of a data subject by a lawful representative or an agent specifically authorized by the data subject to do so;\n\nâData subjectâ refers to an individual whose personal, sensitive personal, or privileged information is processed;\n\nâData processing systemsâ refers to the structure and procedure by which personal data is collected and further processed in an information and communications system or relevant filing system, including the purpose and intended output of the processing;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 7,
+            "text": "âData sharingâ is the disclosure or transfer to a third party of personal data under the custody of a personal information controller or personal information processor. In the case of the latter, such disclosure or transfer must have been upon the instructions of the personal information controller concerned. The term excludes outsourcing, or the disclosure or transfer of personal data by a personal information controller to a personal information processor;\n\nâDirect marketingâ refers to communication by whatever means of any advertising or marketing material which is directed to particular individuals;\n\nâFiling systemâ refers to any set of information relating to natural or juridical persons to the extent that, although the information is not processed by equipment operating automatically in response to instructions given for that purpose, the set is structured, either by reference to individuals or by reference to criteria relating to individuals, in such a way that specific information relating to a particular individual is readily accessible;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 8,
+            "text": "âInformation and communications systemâ refers to a system for generating, sending, receiving, storing, or otherwise processing electronic data messages or electronic documents, and includes the computer system or other similar device by which data is recorded, transmitted, or stored, and any procedure related to the recording, transmission, or storage of electronic data, electronic message, or electronic document;\n\nâPersonal dataâ refers to all types of personal information;\n\nâPersonal data breachâ refers to a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed;\n\nâPersonal informationâ refers to any information, whether recorded in a material form or not, from which the identity of an individual is apparent or can be reasonably and directly ascertained by the entity holding the information, or when put together with other information would directly and certainly identify an individual;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 9,
+            "text": "âPersonal information controllerâ refers to a natural or juridical person, or any other body who controls the processing of personal data, or instructs another to process personal data on its behalf. The term excludes:\n\nA natural or juridical person, or any other body, who performs such functions as instructed by another person or organization; or\n\nA natural person who processes personal data in connection with his or her personal, family, or household affairs;\n\nThere is control if the natural or juridical person or any other body decides on what information is collected, or the purpose or extent of its processing;\n\nâPersonal information processorâ refers to any natural or juridical person or any other body to whom a personal information controller may outsource or instruct the processing of personal data pertaining to a data subject;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 10,
+            "text": "âProcessingâ refers to any operation or any set of operations performed upon personal data including, but not limited to, the collection, recording, organization, storage, updating or modification, retrieval, consultation, use, consolidation, blocking, erasure or destruction of data. Processing may be performed through automated means, or manual processing, if the personal data are contained or are intended to be contained in a filing system;\n\nâProfilingâ refers to any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyze or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behavior, location or movements;\n\nâPrivileged informationâ refers to any and all forms of data, which, under the Rules of Court and other pertinent laws constitute privileged communication;\n\nâPublic authorityâ refers to any government entity created by the Constitution or law, and vested with law enforcement or regulatory authority and functions;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 11,
+            "text": "âSecurity incidentâ is an event or occurrence that affects or tends to affect data protection, or may compromise the availability, integrity and confidentiality of personal data. It includes incidents that would result to a personal data breach, if not for safeguards that have been put in place;\n\nSensitive personal information refers to personal information:\n\nAbout an individualâs race, ethnic origin, marital status, age, color, and religious, philosophical or political affiliations;\n\nAbout an individualâs health, education, genetic or sexual life of a person, or to any proceeding for any offense committed or alleged to have been committed by such individual, the disposal of such proceedings, or the sentence of any court in such proceedings;\n\nIssued by government agencies peculiar to an individual which includes, but is not limited to, social security numbers, previous or current health records, licenses or its denials, suspension or revocation, and tax returns; and\n\nSpecifically established by an executive order or an act of Congress to be kept classified.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 12,
+            "text": "Rule II. Scope of Application",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 13,
+            "text": "Section 4.\n\nScope.\n\nThe Act and these Rules apply to the processing of personal data by any natural and juridical person in the government or private sector. They apply to an act done or practice engaged in and outside of the Philippines if:\n\nThe natural or juridical person involved in the processing of personal data is found or established in the Philippines;\n\nThe act, practice or processing relates to personal data about a Philippine citizen or Philippine resident;\n\nThe processing of personal data is being done in the Philippines; or\n\nThe act, practice or processing of personal data is done or engaged in by an entity with links to the Philippines, with due consideration to international law and comity, such as, but not limited to, the following:\n\nUse of equipment located in the country, or maintains an office, branch or agency in the Philippines for processing of personal data;\n\nA contract is entered in the Philippines;\n\nA juridical entity unincorporated in the Philippines but has central management and control in the country;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 14,
+            "text": "A juridical entity unincorporated in the Philippines but has central management and control in the country;\n\nAn entity that has a branch, agency, office or subsidiary in the Philippines and the parent or affiliate of the Philippine entity has access to personal data;\n\nAn entity that carries on business in the Philippines;\n\nAn entity that collects or holds personal data in the Philippines.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 15,
+            "text": "Section 5.\n\nSpecial Cases.\n\nThe Act and these Rules shall not apply to the following specified information, only to the minimum extent of collection, access, use, disclosure or other processing necessary to the purpose, function, or activity concerned:\n\nInformation processed for purpose of allowing public access to information that fall within matters of public concern, pertaining to:\n\nInformation about any individual who is or was an officer or employee of government that relates to his or her position or functions, including:\n\n(a)\n\nThe fact that the individual is or was an officer or employee of the government;\n\n(b)\n\nThe title, office address, and office telephone number of the individual;\n\n(c)\n\nThe classification, salary range, and responsibilities of the position held by the individual; and\n\n(d)\n\nThe name of the individual on a document he or she prepared in the course of his or her employment with the government;\n\nInformation about an individual who is or was performing a service under contract for a government institution, but only in so far as it relates to such service, including the the name of the individual and the terms of his or her contract;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 16,
+            "text": "Information relating to a benefit of a financial nature conferred on an individual upon the discretion of the government, such as the granting of a license or permit, including the name of the individual and the exact nature of the benefit:\n\nProvided,\n\nthat they do not include benefits given in the course of an ordinary transaction or as a matter of right;\n\nPersonal information processed for journalistic, artistic or literary purpose, in order to uphold freedom of speech, of expression, or of the press, subject to requirements of other applicable law or regulations;\n\nPersonal information that will be processed for research purpose, intended for a public benefit, subject to the requirements of applicable laws, regulations, or ethical standards;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 17,
+            "text": "Information necessary in order to carry out the functions of public authority, in accordance with a constitutionally or statutorily mandated function pertaining to law enforcement or regulatory function, including the performance of the functions of the independent, central monetary authority, subject to restrictions provided by law. Nothing in this Act shall be construed as having amended or repealed Republic Act No. 1405, otherwise known as the Secrecy of Bank Deposits Act; Republic Act No. 6426, otherwise known as the Foreign Currency Deposit Act; and Republic Act No. 9510, otherwise known as the Credit Information System Act (CISA);\n\nInformation necessary for banks, other financial institutions under the jurisdiction of the independent, central monetary authority or Bangko Sentral ng Pilipinas, and other bodies authorized by law, to the extent necessary to comply with Republic Act No. 9510 (CISA), Republic Act No. 9160, as amended, otherwise known as the Anti-Money Laundering Act, and other applicable laws;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 18,
+            "text": "Personal information originally collected from residents of foreign jurisdictions in accordance with the laws of those foreign jurisdictions, including any applicable data privacy laws, which is being processed in the Philippines. The burden of proving the law of the foreign jurisdiction falls on the person or body seeking exemption. In the absence of proof, the applicable law shall be presumed to be the Act and these Rules:\n\nProvided,\n\nthat the non-applicability of the Act or these Rules do not extend to personal information controllers or personal information processors, who remain subject to the requirements of implementing security measures for personal data protection:\n\nProvided further,\n\nthat the processing of the information provided in the preceding paragraphs shall be exempted from the requirements of the Act only to the minimum extent necessary to achieve the specific purpose, function, or activity.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 19,
+            "text": "Section 6.\n\nProtection afforded to Data Subjects.\n\nUnless directly incompatible or inconsistent with the preceding sections in relation to the purpose, function, or activities the non-applicability concerns, the personal information controller or personal information processor shall uphold the rights of data subjects, and adhere to general data privacy principles and the requirements of lawful processing.\n\nThe burden of proving that the Act and these Rules are not applicable to a particular information falls on those involved in the processing of personal data or the party claiming the non-applicability.\n\nIn all cases, the determination of any exemption shall be liberally interpreted in favor of the rights and interests of the data subject.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 20,
+            "text": "Section 7.\n\nProtection Afforded to Journalists and their Sources.\n\nPublishers, editors, or duly accredited reporters of any newspaper, magazine or periodical of general circulation shall not be compelled to reveal the source of any news report or information appearing in said publication if it was related in any confidence to such publisher, editor, or reporter.\n\nPublishers, editors, or duly accredited reporters who are likewise personal information controllers or personal information processors within the meaning of the law are still bound to follow the Data Privacy Act and related issuances with regard to the processing of personal data, upholding rights of their data subjects and maintaining compliance with other provisions that are not incompatible with the protection provided by Republic Act No. 53.\n\nRule III. National Privacy Commission\n\nSection 8.\n\nMandate.\n\nThe National Privacy Commission is an independent body mandated to administer and implement the Act, and to monitor and ensure compliance of the country with international standards set for personal data protection.\n\nSection 9.\n\nFunctions.\n\nThe National Privacy Commission shall have the following functions:",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 21,
+            "text": "Rule Making. The Commission shall develop, promulgate, review or amend rules and regulations for the effective implementation of the Act. This includes:\n\nRecommending organizational, physical and technical security measures for personal data protection, encryption, and access to sensitive personal information maintained by government agencies, considering the most appropriate standard recognized by the information and communications technology industry, as may be necessary;\n\nSpecifying electronic format and technical standards, modalities and procedures for data portability, as may be necessary;\n\nIssuing guidelines for organizational, physical, and technical security measures for personal data protection, taking into account the nature of the personal data to be protected, the risks presented by the processing, the size of the organization and complexity of its operations, current data privacy best practices, cost of security implementation, and the most appropriate standard recognized by the information and communications technology industry, as may be necessary;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 22,
+            "text": "Consulting with relevant regulatory agencies in the formulation, review, amendment, and administration of privacy codes, applying the standards set out in the Act, with respect to the persons, entities, business activities, and business sectors that said regulatory bodies are authorized to principally regulate pursuant to law;\n\nProposing legislation, amendments or modifications to Philippine laws on privacy or data protection, as may be necessary;\n\nEnsuring proper and effective coordination with data privacy regulators in other countries and private accountability agents;\n\nParticipating in international and regional initiatives for data privacy protection.\n\nAdvisory. The Commission shall be the advisory body on matters affecting protection of personal data. This includes:\n\nCommenting on the implication on data privacy of proposed national or local statutes, regulations or procedures, issuing advisory opinions, and interpreting the provisions of the Act and other data privacy laws;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 23,
+            "text": "Reviewing, approving, rejecting, or requiring modification of privacy codes voluntarily adhered to by personal information controllers, which may include private dispute resolution mechanisms for complaints against any participating personal information controller, and which adhere to the underlying data privacy principles embodied in the Act and these Rules;\n\nProviding assistance on matters relating to privacy or data protection at the request of a national or local agency, a private entity or any person, including the enforcement of rights of data subjects;\n\nAssisting Philippine companies doing business abroad to respond to data protection laws and regulations.\n\nPublic Education. The Commission shall undertake necessary or appropriate efforts to inform and educate the public of data privacy, data protection, and fair information rights and responsibilities. This includes:\n\nPublishing, on a regular basis, a guide to all laws relating to data protection;\n\nPublishing a compilation of agency system of records and notices, including index and other finding aids;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 24,
+            "text": "Publishing a compilation of agency system of records and notices, including index and other finding aids;\n\nCoordinating with other government agencies and the private sector on efforts to formulate and implement plans and policies to strengthen the protection of personal data in the country;\n\nCompliance and Monitoring. The Commission shall perform compliance and monitoring functions to ensure effective implementation of the Act, these Rules, and other issuances. This includes:\n\nEnsuring compliance by personal information controllers with the provisions of the Act;\n\nMonitoring the compliance of all government agencies or instrumentalities as regards their security and technical measures, and recommending the necessary action in order to meet minimum standards for protection of personal data pursuant to the Act;\n\nNegotiating and contracting with other data privacy authorities of other countries for cross-border application and implementation of respective privacy laws;\n\nGenerally performing such acts as may be necessary to facilitate cross-border enforcement of data privacy protection;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 25,
+            "text": "Generally performing such acts as may be necessary to facilitate cross-border enforcement of data privacy protection;\n\nManaging the registration of personal data processing systems in the country, including the personal data processing system of contractors and their employees entering into contracts with government agencies that involves accessing or requiring sensitive personal information of at least one thousand (1,000) individuals.\n\nComplaints and Investigations. The Commission shall adjudicate on complaints and investigations on matters affecting personal data: Provided, that In resolving any complaint or investigation, except where amicable settlement is reached by the parties, the Commission shall act as a collegial body. This includes:\n\nReceiving complaints and instituting investigations regarding violations of the Act, these Rules, and other issuances of the Commission, including violations of the rights of data subjects and other matters affecting personal data;\n\nSummoning witnesses, and requiring the production of evidence by a subpoena duces tecum for the purpose of collecting the information necessary to perform its functions under the Act:\n\nProvided,",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 26,
+            "text": "Provided,\n\nthat the Commission may be given access to personal data that is subject of any complaint;\n\nFacilitating or enabling settlement of complaints through the use of alternative dispute resolution processes, and adjudicating on matters affecting any personal data;\n\nPreparing reports on the disposition of complaints and the resolution of any investigation it initiates, and, in cases it deems appropriate, publicizing such reports;\n\nEnforcement. The Commission shall perform all acts as may be necessary to effectively implement the Act, these Rules, and its other issuances, and to enforce its Orders, Resolutions or Decisions, including the imposition of administrative sanctions, fines, or penalties. This includes:\n\nIssuing compliance or enforcement orders;\n\nAwarding indemnity on matters affecting any personal data, or rights of data subjects;\n\nIssuing cease and desist orders, or imposing a temporary or permanent ban on the processing of personal data, upon finding that the processing will be detrimental to national security or public interest, or if it is necessary to preserve and protect the rights of data subjects;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 27,
+            "text": "Recommending to the Department of Justice (DOJ) the prosecution of crimes and imposition of penalties specified in the Act;\n\nCompelling or petitioning any entity, government agency, or instrumentality, to abide by its orders or take action on a matter affecting data privacy;\n\nImposing administrative fines for violations of the Act, these Rules, and other issuances of the Commission.\n\nOther functions. The Commission shall exercise such other functions as may be necessary to fulfill its mandate under the Act.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 28,
+            "text": "Section 10.\n\nAdministrative Issuances.\n\nThe Commission shall publish or issue official directives and administrative issuances, orders, and circulars, which include:\n\nRules of procedure in the exercise of its quasi-judicial functions, subject to the suppletory application of the Rules of Court;\n\nSchedule of administrative fines and penalties for violations of the Act, these Rules, and issuances or Orders of the Commission, including the applicable fees for its administrative services and filing fees;\n\nProcedure for registration of data processing systems, and notification;\n\nOther administrative issuances consistent with its mandate and other functions.\n\nSection 11.\n\nReports and Information.\n\nThe Commission shall report annually to the President and Congress regarding its activities in carrying out the provisions of the Act, these Rules, and its other issuances. It shall undertake all efforts it deems necessary or appropriate to inform and educate the public of data privacy, data protection, and fair information rights and responsibilities.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 29,
+            "text": "Section 12.\n\nConfidentiality of Personal Data.\n\nMembers, employees, and consultants of the Commission shall ensure at all times the confidentiality of any personal data that come to their knowledge and possession:\n\nProvided,\n\nthat such duty of confidentiality shall remain even after their term, employment, or contract has ended.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 30,
+            "text": "Section 13.\n\nOrganizational Structure.\n\nThe Commission is attached to the Department of Information and Communications Technology for policy and program coordination in accordance with Section 38(3) of Executive Order No. 292, series of 1987, also known as the Administrative Code of 1987. The Commission shall remain completely independent in the performance of its functions.\n\nThe Commission shall be headed by a Privacy Commissioner, who shall act as Chairman of the Commission. The Privacy Commissioner must be at least thirty-five (35) years of age and of good moral character, unquestionable integrity and known probity, and a recognized expert in the field of information technology and data privacy. The Privacy Commissioner shall enjoy the benefits, privileges, and emoluments equivalent to the rank of Secretary.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 31,
+            "text": "The Privacy Commissioner shall be assisted by two (2) Deputy Privacy Commissioners. One shall be responsible for Data Processing Systems, while the other shall be responsible for Policies and Planning. The Deputy Privacy Commissioners must be recognized experts in the field of information and communications technology and data privacy. They shall enjoy the benefits, privileges, and emoluments equivalent to the rank of Undersecretary.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 32,
+            "text": "Section 14.\n\nSecretariat.\n\nThe Commission is authorized to establish a Secretariat, which shall assist in the performance of its functions. The Secretariat shall be headed by an Executive Director and shall be organized according to the following offices:\n\nData Security and Compliance Office;\n\nLegal and Enforcement Office;\n\nFinance and Administrative Office;\n\nPrivacy Policy Office;\n\nPublic Information and Assistance Office.\n\nMajority of the members of the Secretariat, in so far as practicable, must have served for at least five (5) years in any agency of the government that is involved in the processing of personal data including, but not limited to, the following offices: Social Security System (SSS), Government Service Insurance System (GSIS), Land Transportation Office (LTO), Bureau of Internal Revenue (BIR), Philippine Health Insurance Corporation (PhilHealth), Commission on Elections (COMELEC), Department of Foreign Affairs (DFA), Department of Justice (DOJ), and Philippine Postal Corporation (Philpost).",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 33,
+            "text": "The organizational structure shall be subject to review and modification by the Commission, including the creation of new divisions and units it may deem necessary, and shall appoint officers and employees of the Commission in accordance with civil service law, rules, and regulations.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 34,
+            "text": "Section 15.\n\nEffect of Lawful Performance of Duty.\n\nThe Privacy Commissioner, the Deputy Commissioners, or any person acting on their behalf or under their direction, shall not be civilly liable for acts done in good faith in the performance of their duties:\n\nProvided,\n\nthat they shall be liable for willful or negligent acts, which are contrary to law, morals, public policy, and good customs, even if they acted under orders or instructions of superiors:\n\nProvided further,\n\nthat in case a lawsuit is filed against them in relation to the performance of their duties, where such performance is lawful, he or she shall be reimbursed by the Commission for reasonable costs of litigation.\n\nSection 16.\n\nMagna Carta for Science and Technology Personnel.\n\nQualified employees of the Commission shall be covered by Republic Act No. 8349, which provides a magna carta for scientists, engineers, researchers, and other science and technology personnel in the government.\n\nRule IV. Data Privacy Principles",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 35,
+            "text": "Rule IV. Data Privacy Principles\n\nSection 17.\n\nGeneral Data Privacy Principles.\n\nThe processing of personal data shall be allowed, subject to compliance with the requirements of the Act and other laws allowing disclosure of information to the public, and adherence to the principles of transparency, legitimate purpose, and proportionality.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 36,
+            "text": "Section 18.\n\nPrinciples of Transparency, Legitimate Purpose and Proportionality.\n\nThe processing of personal data shall be allowed subject to adherence to the principles of transparency, legitimate purpose, and proportionality.\n\nTransparency. The data subject must be aware of the nature, purpose, and extent of the processing of his or her personal data, including the risks and safeguards involved, the identity of personal information controller, his or her rights as a data subject, and how these can be exercised. Any information and communication relating to the processing of personal data should be easy to access and understand, using clear and plain language.\n\nLegitimate purpose. The processing of information shall be compatible with a declared and specified purpose which must not be contrary to law, morals, or public policy.\n\nProportionality. The processing of information shall be adequate, relevant, suitable, necessary, and not excessive in relation to a declared and specified purpose. Personal data shall be processed only if the purpose of the processing could not reasonably be fulfilled by other means.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 37,
+            "text": "Section 19.\n\nGeneral principles in collection, processing and retention.\n\nThe processing of personal data shall adhere to the following general principles in the collection, processing, and retention of personal data:\n\nCollection must be for a declared, specified, and legitimate purpose.\n\nConsent is required prior to the collection and processing of personal data, subject to exemptions provided by the Act and other applicable laws and regulations. When consent is required, it must be time-bound in relation to the declared, specified and legitimate purpose. Consent given may be withdrawn.\n\nThe data subject must be provided specific information regarding the purpose and extent of processing, including, where applicable, the automated processing of his or her personal data for profiling, or processing for direct marketing, and data sharing.\n\nPurpose should be determined and declared before, or as soon as reasonably practicable, after collection.\n\nOnly personal data that is necessary and compatible with declared, specified, and legitimate purpose shall be collected.\n\nPersonal data shall be processed fairly and lawfully.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 38,
+            "text": "Personal data shall be processed fairly and lawfully.\n\nProcessing shall uphold the rights of the data subject, including the right to refuse, withdraw consent, or object. It shall likewise be transparent, and allow the data subject sufficient information to know the nature and extent of processing.\n\nInformation provided to a data subject must always be in clear and plain language to ensure that they are easy to understand and access.\n\nProcessing must be in a manner compatible with declared, specified, and legitimate purpose.\n\nProcessed personal data should be adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed.\n\nProcessing shall be undertaken in a manner that ensures appropriate privacy and security safeguards.\n\nProcessing should ensure data quality.\n\nPersonal data should be accurate and where necessary for declared, specified and legitimate purpose, kept up to date.\n\nInaccurate or incomplete data must be rectified, supplemented, destroyed or their further processing restricted.\n\nPersonal Data shall not be retained longer than necessary.\n\nRetention of personal data shall only for as long as necessary:\n\n(a)",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 39,
+            "text": "Personal Data shall not be retained longer than necessary.\n\nRetention of personal data shall only for as long as necessary:\n\n(a)\n\nfor the fulfillment of the declared, specified, and legitimate purpose, or when the processing relevant to the purpose has been terminated;\n\n(b)\n\nfor the establishment, exercise or defense of legal claims; or\n\n(c)\n\nfor legitimate business purposes, which must be consistent with standards followed by the applicable industry or approved by appropriate government agency.\n\nRetention of personal data shall be allowed in cases provided by law.\n\nPersonal data shall be disposed or discarded in a secure manner that would prevent further processing, unauthorized access, or disclosure to any other party or the public, or prejudice the interests of the data subjects.\n\nAny authorized further processing shall have adequate safeguards.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 40,
+            "text": "Any authorized further processing shall have adequate safeguards.\n\nPersonal data originally collected for a declared, specified, or legitimate purpose may be processed further for historical, statistical, or scientific purposes, and, in cases laid down in law, may be stored for longer periods, subject to implementation of the appropriate organizational, physical, and technical security measures required by the Act in order to safeguard the rights and freedoms of the data subject.\n\nPersonal data which is aggregated or kept in a form which does not permit identification of data subjects may be kept longer than necessary for the declared, specified, and legitimate purpose.\n\nPersonal data shall not be retained in perpetuity in contemplation of a possible future use yet to be determined.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 41,
+            "text": "Section 20.\n\nGeneral Principles for Data Sharing.\n\nFurther Processing of Personal Data collected from a party other than the Data Subject shall be allowed under any of the following conditions:\n\nData sharing shall be allowed when it is expressly authorized by law:\n\nProvided,\n\nthat there are adequate safeguards for data privacy and security, and processing adheres to principle of transparency, legitimate purpose and proportionality.\n\nData Sharing shall be allowed in the private sector if the data subject consents to data sharing, and the following conditions are complied with:\n\nConsent for data sharing shall be required even when the data is to be shared with an affiliate or mother company, or similar relationships;\n\nData sharing for commercial purposes, including direct marketing, shall be covered by a data sharing agreement.\n\n(a)\n\nThe data sharing agreement shall establish adequate safeguards for data privacy and security, and uphold rights of data subjects.\n\n(b)\n\nThe data sharing agreement shall be subject to review by the Commission, on its own initiative or upon complaint of data subject;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 42,
+            "text": "(b)\n\nThe data sharing agreement shall be subject to review by the Commission, on its own initiative or upon complaint of data subject;\n\nThe data subject shall be provided with the following information prior to collection or before data is shared:\n\n(a)\n\nIdentity of the personal information controllers or personal information processors that will be given access to the personal data;\n\n(b)\n\nPurpose of data sharing;\n\n(c)\n\nCategories of personal data concerned;\n\n(d)\n\nIntended recipients or categories of recipients of the personal data;\n\n(e)\n\nExistence of the rights of data subjects, including the right to access and correction, and the right to object;\n\n(f)\n\nOther information that would sufficiently notify the data subject of the nature and extent of data sharing and the manner of processing.\n\nFurther processing of shared data shall adhere to the data privacy principles laid down in the Act, these Rules, and other issuances of the Commission.\n\nData collected from parties other than the data subject for purpose of research shall be allowed when the personal data is publicly available, or has the consent of the data subject for purpose of research:\n\nProvided,",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 43,
+            "text": "Provided,\n\nthat adequate safeguards are in place, and no decision directly affecting the data subject shall be made on the basis of the data collected or processed. The rights of the data subject shall be upheld without compromising research integrity.\n\nData sharing between government agencies for the purpose of a public function or provision of a public service shall be covered a data sharing agreement.\n\nAny or all government agencies party to the agreement shall comply with the Act, these Rules, and all other issuances of the Commission, including putting in place adequate safeguards for data privacy and security.\n\nThe data sharing agreement shall be subject to review of the Commission, on its own initiative or upon complaint of data subject.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 44,
+            "text": "Rule V. Lawful Processing of Personal Data",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 45,
+            "text": "Section 21.\n\nCriteria for Lawful Processing of Personal Information.\n\nProcessing of personal information is allowed, unless prohibited by law. For processing to be lawful, any of the following conditions must be complied with:\n\nThe data subject must have given his or her consent prior to the collection, or as soon as practicable and reasonable;\n\nThe processing involves the personal information of a data subject who is a party to a contractual agreement, in order to fulfill obligations under the contract or to take steps at the request of the data subject prior to entering the said agreement;\n\nThe processing is necessary for compliance with a legal obligation to which the personal information controller is subject;\n\nThe processing is necessary to protect vitally important interests of the data subject, including his or her life and health;\n\nThe processing of personal information is necessary to respond to national emergency or to comply with the requirements of public order and safety, as prescribed by law;\n\nThe processing of personal information is necessary for the fulfillment of the constitutional or statutory mandate of a public authority; or",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 46,
+            "text": "The processing of personal information is necessary for the fulfillment of the constitutional or statutory mandate of a public authority; or\n\nThe processing is necessary to pursue the legitimate interests of the personal information controller, or by a third party or parties to whom the data is disclosed, except where such interests are overridden by fundamental rights and freedoms of the data subject, which require protection under the Philippine Constitution.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 47,
+            "text": "Section 22.\n\nSensitive Personal Information and Privileged Information.\n\nThe processing of sensitive personal and privileged information is prohibited, except in any of the following cases:\n\nConsent is given by data subject, or by the parties to the exchange of privileged information, prior to the processing of the sensitive personal information or privileged information, which shall be undertaken pursuant to a declared, specified, and legitimate purpose;\n\nThe processing of the sensitive personal information or privileged information is provided for by existing laws and regulations:\n\nProvided,\n\nthat said laws and regulations do not require the consent of the data subject for the processing, and guarantee the protection of personal data;\n\nThe processing is necessary to protect the life and health of the data subject or another person, and the data subject is not legally or physically able to express his or her consent prior to the processing;\n\nThe processing is necessary to achieve the lawful and noncommercial objectives of public organizations and their associations provided that:",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 48,
+            "text": "The processing is necessary to achieve the lawful and noncommercial objectives of public organizations and their associations provided that:\n\nProcessing is confined and related to the bona fide members of these organizations or their associations;\n\nThe sensitive personal information are not transferred to third parties; and\n\nConsent of the data subject was obtained prior to processing;\n\nThe processing is necessary for the purpose of medical treatment:\n\nProvided,\n\nthat it is carried out by a medical practitioner or a medical treatment institution, and an adequate level of protection of personal data is ensured; or\n\nThe processing concerns sensitive personal information or privileged information necessary for the protection of lawful rights and interests of natural or legal persons in court proceedings, or the establishment, exercise, or defense of legal claims, or when provided to government or public authority pursuant to a constitutional or statutory mandate.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 49,
+            "text": "Section 23.\n\nExtension of Privileged Communication.\n\nPersonal information controllers may invoke the principle of privileged communication over privileged information that they lawfully control or process. Subject to existing laws and regulations, any evidence gathered from privileged information is inadmissible.\n\nWhen the Commission inquires upon communication claimed to be privileged, the personal information controller concerned shall prove the nature of the communication in an executive session. Should the communication be determined as privileged, it shall be excluded from evidence, and the contents thereof shall not form part of the records of the case:\n\nProvided,\n\nthat where the privileged communication itself is the subject of a breach, or a privacy concern or investigation, it may be disclosed to the Commission but only to the extent necessary for the purpose of investigation, without including the contents thereof in the records.\n\nSection 24.\n\nSurveillance of Suspects and Interception of Recording of Communications.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 50,
+            "text": "Section 24.\n\nSurveillance of Suspects and Interception of Recording of Communications.\n\nSection 7 of Republic Act No. 9372, otherwise known as the \"Human Security Act of 2007â, is hereby amended to include the condition that the processing of personal data for the purpose of surveillance, interception, or recording of communications shall comply with the Data Privacy Act, including adherence to the principles of transparency, proportionality, and legitimate purpose.\n\nRule VI. Security Measures for the Protection of Personal Data",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 51,
+            "text": "Rule VI. Security Measures for the Protection of Personal Data\n\nSection 25.\n\nData Privacy and Security.\n\nPersonal information controllers and personal information processors shall implement reasonable and appropriate organizational, physical, and technical security measures for the protection of personal data.\n\nThe personal information controller and personal information processor shall take steps to ensure that any natural person acting under their authority and who has access to personal data, does not process them except upon their instructions, or as required by law.\n\nThe security measures shall aim to maintain the availability, integrity, and confidentiality of personal data and are intended for the protection of personal data against any accidental or unlawful destruction, alteration, and disclosure, as well as against any other unlawful processing. These measures shall be implemented to protect personal data against natural dangers such as accidental loss or destruction, and human dangers such as unlawful access, fraudulent misuse, unlawful destruction, alteration and contamination.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 52,
+            "text": "Section 26.\n\nOrganizational Security Measures.\n\nWhere appropriate, personal information controllers and personal information processors shall comply with the following guidelines for organizational security:\n\nCompliance Officers. Any natural or juridical person or other body involved in the processing of personal data shall designate an individual or individuals who shall function as data protection officer, compliance officer or otherwise be accountable for ensuring compliance with applicable laws and regulations for the protection of data privacy and security.\n\nData Protection Policies. Any natural or juridical person or other body involved in the processing of personal data shall implement appropriate data protection policies that provide for organization, physical, and technical security measures, and, for such purpose, take into account the nature, scope, context and purposes of the processing, as well as the risks posed to the rights and freedoms of data subjects.\n\nThe policies shall implement data protection principles both at the time of the determination of the means for processing and at the time of the processing itself.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 53,
+            "text": "The policies shall implement appropriate security measures that, by default, ensure only personal data which is necessary for the specified purpose of the processing are processed. They shall determine the amount of personal data collected, including the extent of processing involved, the period of their storage, and their accessibility.\n\nThe polices shall provide for documentation, regular review, evaluation, and updating of the privacy and security policies and practices.\n\nRecords of Processing Activities. Any natural or juridical person or other body involved in the processing of personal data shall maintain records that sufficiently describe its data processing system, and identify the duties and responsibilities of those individuals who will have access to personal data. Records should include:\n\nInformation about the purpose of the processing of personal data, including any intended future processing or data sharing;\n\nA description of all categories of data subjects, personal data, and recipients of such personal data that will be involved in the processing;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 54,
+            "text": "A description of all categories of data subjects, personal data, and recipients of such personal data that will be involved in the processing;\n\nGeneral information about the data flow within the organization, from the time of collection, processing, and retention, including the time limits for disposal or erasure of personal data;\n\nA general description of the organizational, physical, and technical security measures in place;\n\nThe name and contact details of the personal information controller and, where applicable, the joint controller, the its representative, and the compliance officer or Data Protection Officer, or any other individual or individuals accountable for ensuring compliance with the applicable laws and regulations for the protection of data privacy and security.\n\nManagement of Human Resources. Any natural or juridical person or other entity involved in the processing of personal data shall be responsible for selecting and supervising its employees, agents, or representatives, particularly those who will have access to personal data.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 55,
+            "text": "The said employees, agents, or representatives shall operate and hold personal data under strict confidentiality if the personal data are not intended for public disclosure. This obligation shall continue even after leaving the public service, transferring to another position, or upon terminating their employment or contractual relations. There shall be capacity building, orientation or training programs for such employees, agents or representatives, regarding privacy or security policies.\n\nProcessing of Personal Data. Any natural or juridical person or other body involved in the processing of personal data shall develop, implement and review:\n\nA procedure for the collection of personal data, including procedures for obtaining consent, when applicable;\n\nProcedures that limit the processing of data, to ensure that it is only to the extent necessary for the declared, specified, and legitimate purpose;\n\nPolicies for access management, system monitoring, and protocols to follow during security incidents or technical problems;\n\nPolicies and procedures for data subjects to exercise their rights under the Act;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 56,
+            "text": "Policies and procedures for data subjects to exercise their rights under the Act;\n\nData retention schedule, including timeline or conditions for erasure or disposal of records.\n\nContracts with Personal Information Processors. The personal information controller, through appropriate contractual agreements, shall ensure that its personal information processors, where applicable, shall also implement the security measures required by the Act and these Rules. It shall only engage those personal information processors that provide sufficient guarantees to implement appropriate security measures specified in the Act and these Rules, and ensure the protection of the rights of the data subject.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 57,
+            "text": "Section 27.\n\nPhysical Security Measures.\n\nWhere appropriate, personal information controllers and personal information processors shall comply with the following guidelines for physical security:\n\nPolicies and procedures shall be implemented to monitor and limit access to and activities in the room, workstation or facility, including guidelines that specify the proper use of and access to electronic media;\n\nDesign of office space and work stations, including the physical arrangement of furniture and equipment, shall provide privacy to anyone processing personal data, taking into consideration the environment and accessibility to the public;\n\nThe duties, responsibilities and schedule of individuals involved in the processing of personal data shall be clearly defined to ensure that only the individuals actually performing official duties shall be in the room or work station, at any given time;\n\nAny natural or juridical person or other body involved in the processing of personal data shall implement Policies and procedures regarding the transfer, removal, disposal, and reuse of electronic media, to ensure appropriate protection of personal data;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 58,
+            "text": "Policies and procedures that prevent the mechanical destruction of files and equipment shall be established. The room and workstation used in the processing of personal data shall, as far as practicable, be secured against natural disasters, power disturbances, external access, and other similar threats.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 59,
+            "text": "Section 28.\n\nGuidelines for Technical Security Measures.\n\nWhere appropriate, personal information controllers and personal information processors shall adopt and establish the following technical security measures:\n\nA security policy with respect to the processing of personal data;\n\nSafeguards to protect their computer network against accidental, unlawful or unauthorized usage, any interference which will affect data integrity or hinder the functioning or availability of the system, and unauthorized access through an electronic network;\n\nThe ability to ensure and maintain the confidentiality, integrity, availability, and resilience of their processing systems and services;\n\nRegular monitoring for security breaches, and a process both for identifying and accessing reasonably foreseeable vulnerabilities in their computer networks, and for taking preventive, corrective, and mitigating action against security incidents that can lead to a personal data breach;\n\nThe ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 60,
+            "text": "The ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;\n\nA process for regularly testing, assessing, and evaluating the effectiveness of security measures;\n\nEncryption of personal data during storage and while in transit, authentication process, and other technical security measures that control and limit access.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 61,
+            "text": "Section 29.\n\nAppropriate Level of Security.\n\nThe Commission shall monitor the compliance of natural or juridical person or other body involved in the processing of personal data, specifically their security measures, with the guidelines provided in these Rules and subsequent issuances of the Commission. In determining the level of security appropriate for a particular personal information controller or personal information processor, the Commission shall take into account the nature of the personal data that requires protection, the risks posed by the processing, the size of the organization and complexity of its operations, current data privacy best practices, and the cost of security implementation. The security measures provided herein shall be subject to regular review and evaluation, and may be updated as necessary by the Commission in separate issuances, taking into account the most appropriate standard recognized by the information and communications technology industry and data privacy best practices.\n\nRule VII. Security of Sensitive Personal Information in\n\nGovernment",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 62,
+            "text": "Rule VII. Security of Sensitive Personal Information in\n\nGovernment\n\nSection 30.\n\nResponsibility of Heads of Agencies.\n\nAll sensitive personal information maintained by the government, its agencies, and instrumentalities shall be secured, as far as practicable, with the use of the most appropriate standard recognized by the information and communications technology industry, subject to these Rules and other issuances of the Commission. The head of each government agency or instrumentality shall be responsible for complying with the security requirements mentioned herein. The Commission shall monitor government agency compliance and may recommend the necessary action in order to satisfy the minimum standards.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 63,
+            "text": "Section 31.\n\nRequirements Relating to Access by Agency Personnel to Sensitive Personal Information.\n\nOn-site and Online Access.\n\nNo employee of the government shall have access to sensitive personal information on government property or through online facilities unless he or she the employee has received a security clearance from the head of the source agency. The source agency is the government agency who originally collected the personal data.\n\nA source agency shall strictly regulate access to sensitive personal information under its custody or control, particularly when it allows online access. An employee of the government shall only be granted a security clearance when the performance of his or her official functions or the provision of a public service directly depends on and cannot otherwise be performed unless access to the personal data is allowed.\n\nWhere allowed under the next preceding sections, online access to sensitive personal information shall be subject to the following conditions:\n\n(a)\n\nAn information technology governance framework has been designed and implemented;\n\n(b)\n\nSufficient organizational, physical and technical security measures have been established;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 64,
+            "text": "(b)\n\nSufficient organizational, physical and technical security measures have been established;\n\n(c)\n\nThe agency is capable of protecting sensitive personal information in accordance with data privacy practices and standards recognized by the information and communication technology industry;\n\n(d)\n\nThe employee of the government is only given online access to sensitive personal information necessary for the performance of official functions or the provision of a public service.\n\nOff-site access.\n\nSensitive personal information maintained by an agency may not be transported or accessed from a location off or outside of government property, whether by its agent or employee, unless the head of agency has ensured the implementation of privacy policies and appropriate security measures. A request for such transportation or access shall be submitted to and approved by the head of agency. The request must include proper accountability mechanisms in the processing of data.\n\nThe head of agency shall approve requests for off-site access in accordance with the following guidelines:\n\n(a)",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 65,
+            "text": "The head of agency shall approve requests for off-site access in accordance with the following guidelines:\n\n(a)\n\nDeadline for Approval or Disapproval. The head of agency shall approve or disapprove the request within two (2) business days after the date of submission of the request. Where no action is taken by the head of agency, the request is considered disapproved;\n\n(b)\n\nLimitation to One thousand (1,000) Records. Where a request is approved, the head of agency shall limit the access to not more than one thousand (1,000) records at a time, subject to the next succeeding paragraph.\n\n(c)\n\nEncryption. Any technology used to store, transport or access sensitive personal information for purposes of off-site access approved under this subsection shall be secured by the use of the most secure encryption standard recognized by the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 66,
+            "text": "Section 32.\n\nImplementation of Security Requirements.\n\nNotwithstanding the effective date of these Rules, the requirements in the preceding sections shall be implemented before any off-site or online access request is approved. Any data sharing agreement between a source agency and another government agency shall be subject to review of the Commission on its own initiative or upon complaint of data subject.\n\nSection 33.\n\nApplicability to Government Contractors.\n\nIn entering into any contract with a private service provider that may involve accessing or requiring sensitive personal information from one thousand (1,000) or more individuals, a government agency shall require such service provider and its employees to register their personal data processing system with the Commission in accordance with the Act and these Rules. The service provider, as personal information processor, shall comply with the other provisions of the Act and these Rules, particularly the immediately preceding sections, similar to a government agency and its employees.\n\nRule VIII. Rights of Data Subjects",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 67,
+            "text": "Section 34.\n\nRights of the Data Subject.\n\nThe data subject is entitled to the following rights:\n\nRight to be informed.\n\nThe data subject has a right to be informed whether personal data pertaining to him or her shall be, are being, or have been processed, including the existence of automated decision-making and profiling.\n\nThe data subject shall be notified and furnished with information indicated hereunder before the entry of his or her personal data into the processing system of the personal information controller, or at the next practical opportunity:\n\n(a)\n\nDescription of the personal data to be entered into the system;\n\n(b)\n\nPurposes for which they are being or will be processed, including processing for direct marketing, profiling or historical, statistical or scientific purpose;\n\n(c)\n\nBasis of processing, when processing is not based on the consent of the data subject;\n\n(d)\n\nScope and method of the personal data processing;\n\n(e)\n\nThe recipients or classes of recipients to whom the personal data are or may be disclosed;\n\n(f)",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 68,
+            "text": "(e)\n\nThe recipients or classes of recipients to whom the personal data are or may be disclosed;\n\n(f)\n\nMethods utilized for automated access, if the same is allowed by the data subject, and the extent to which such access is authorized, including meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject;\n\n(g)\n\nThe identity and contact details of the personal data controller or its representative;\n\n(h)\n\nThe period for which the information will be stored; and\n\n(i)\n\nThe existence of their rights as data subjects, including the right to access, correction, and object to the processing, as well as the right to lodge a complaint before the Commission.\n\nRight to object. The data subject shall have the right to object to the processing of his or her personal data, including processing for direct marketing, automated processing or profiling. The data subject shall also be notified and given an opportunity to withhold consent to the processing in case of changes or any amendment to the information supplied or declared to the data subject in the preceding paragraph.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 69,
+            "text": "When a data subject objects or withholds consent, the personal information controller shall no longer process the personal data, unless:\n\nThe personal data is needed pursuant to a subpoena;\n\nThe collection and processing are for obvious purposes, including, when it is necessary for the performance of or in relation to a contract or service to which the data subject is a party, or when necessary or desirable in the context of an employer-employee relationship between the collector and the data subject; or\n\nThe information is being collected and processed as a result of a legal obligation.\n\nRight to Access. The data subject has the right to reasonable access to, upon demand, the following:\n\nContents of his or her personal data that were processed;\n\nSources from which personal data were obtained;\n\nNames and addresses of recipients of the personal data;\n\nManner by which such data were processed;\n\nReasons for the disclosure of the personal data to recipients, if any;\n\nInformation on automated processes where the data will, or is likely to, be made as the sole basis for any decision that significantly affects or will affect the data subject;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 70,
+            "text": "Date when his or her personal data concerning the data subject were last accessed and modified; and\n\nThe designation, name or identity, and address of the personal information controller.\n\nRight to rectification. The data subject has the right to dispute the inaccuracy or error in the personal data and have the personal information controller correct it immediately and accordingly, unless the request is vexatious or otherwise unreasonable. If the personal data has been corrected, the personal information controller shall ensure the accessibility of both the new and the retracted information and the simultaneous receipt of the new and the retracted information by the intended recipients thereof:\n\nProvided,\n\nThat receipients or third parties who have previously received such processed personal data shall be informed of its inaccuracy and its rectification, upon reasonable request of the data subject.\n\nRight to Erasure or Blocking. The data subject shall have the right to suspend, withdraw or order the blocking, removal or destruction of his or her personal data from the personal information controllerâs filing system.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 71,
+            "text": "This right may be exercised upon discovery and substantial proof of any of the following:\n\n(a)\n\nThe personal data is incomplete, outdated, false, or unlawfully obtained;\n\n(b)\n\nThe personal data is being used for purpose not authorized by the data subject;\n\n(c)\n\nThe personal data is no longer necessary for the purposes for which they were collected;\n\n(d)\n\nThe data subject withdraws consent or objects to the processing, and there is no other legal ground or overriding legitimate interest for the processing;\n\n(e)\n\nThe personal data concerns private information that is prejudicial to data subject, unless justified by freedom of speech, of expression, or of the press or otherwise authorized;\n\n(f)\n\nThe processing is unlawful;\n\n(g)\n\nThe personal information controller or personal information processor violated the rights of the data subject.\n\nThe personal information controller may notify third parties who have previously received such processed personal information.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 72,
+            "text": "The personal information controller may notify third parties who have previously received such processed personal information.\n\nRight to damages. The data subject shall be indemnified for any damages sustained due to such inaccurate, incomplete, outdated, false, unlawfully obtained or unauthorized use of personal data, taking into account any violation of his or her rights and freedoms as data subject.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 73,
+            "text": "Section 35.\n\nTransmissibility of Rights of the Data Subject.\n\nThe lawful heirs and assigns of the data subject may invoke the rights of the data subject to which he or she is an heir or an assignee, at any time after the death of the data subject, or when the data subject is incapacitated or incapable of exercising the rights as enumerated in the immediately preceding section.\n\nSection 36.\n\nRight to Data Portability.\n\nWhere his or her personal data is processed by electronic means and in a structured and commonly used format, the data subject shall have the right to obtain from the personal information controller a copy of such data in an electronic or structured format that is commonly used and allows for further use by the data subject. The exercise of this right shall primarily take into account the right of data subject to have control over his or her personal data being processed based on consent or contract, for commercial purpose, or through automated means. The Commission may specify the electronic format referred to above, as well as the technical standards, modalities, procedures and other rules for their transfer.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 74,
+            "text": "Section 37.\n\nLimitation on Rights.\n\nThe immediately preceding sections shall not be applicable if the processed personal data are used only for the needs of scientific and statistical research and, on the basis of such, no activities are carried out and no decisions are taken regarding the data subject:\n\nProvided,\n\nthat the personal data shall be held under strict confidentiality and shall be used only for the declared purpose. The said sections are also not applicable to the processing of personal data gathered for the purpose of investigations in relation to any criminal, administrative or tax liabilities of a data subject. Any limitations on the rights of the data subject shall only be to the minimum extent necessary to achieve the purpose of said research or investigation.\n\nRule IX. Data Breach Notification.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 75,
+            "text": "Rule IX. Data Breach Notification.\n\nSection 38.\n\nData Breach Notification.\n\nThe Commission and affected data subjects shall be notified by the personal information controller within seventy-two (72) hours upon knowledge of, or when there is reasonable belief by the personal information controller or personal information processor that, a personal data breach requiring notification has occurred.\n\nNotification of personal data breach shall be required when sensitive personal information or any other information that may, under the circumstances, be used to enable identity fraud are reasonably believed to have been acquired by an unauthorized person, and the personal information controller or the Commission believes that such unauthorized acquisition is likely to give rise to a real risk of serious harm to any affected data subject.\n\nDepending on the nature of the incident, or if there is delay or failure to notify, the Commission may investigate the circumstances surrounding the personal data breach. Investigations may include on-site examination of systems and procedures.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 76,
+            "text": "Section 39.\n\nContents of Notification.\n\nThe notification shall at least describe the nature of the breach, the personal data possibly involved, and the measures taken by the entity to address the breach. The notification shall also include measures taken to reduce the harm or negative consequences of the breach, the representatives of the personal information controller, including their contact details, from whom the data subject can obtain additional information about the breach, and any assistance to be provided to the affected data subjects.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 77,
+            "text": "Section 40.\n\nDelay of Notification.\n\nNotification may be delayed only to the extent necessary to determine the scope of the breach, to prevent further disclosures, or to restore reasonable integrity to the information and communications system.\n\nIn evaluating if notification is unwarranted, the Commission may take into account compliance by the personal information controller with this section and existence of good faith in the acquisition of personal data.\n\nThe Commission may exempt a personal information controller from notification where, in its reasonable judgment, such notification would not be in the public interest, or in the interest of the affected data subjects.\n\nThe Commission may authorize postponement of notification where it may hinder the progress of a criminal investigation related to a serious breach.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 78,
+            "text": "Section 41.\n\nBreach Report.\n\nThe personal information controller shall notify the Commission by submitting a report, whether written or electronic, containing the required contents of notification. The report shall also include the name of a designated representative of the personal information controller, and his or her contact details.\n\nAll security incidents and personal data breaches shall be documented through written reports, including those not covered by the notification requirements. In the case of personal data breaches, a report shall include the facts surrounding an incident, the effects of such incident, and the remedial actions taken by the personal information controller. In other security incidents not involving personal data, a report containing aggregated data shall constitute sufficient documentation. These reports shall be made available when requested by the Commission. A general summary of the reports shall be submitted to the Commission annually.\n\nSection 42.\n\nProcedure for Notification.\n\nThe Procedure for breach notification shall be in accordance with the Act, these Rules, and any other issuance of the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 79,
+            "text": "Rule X. Outsourcing and Subcontracting Agreements.\n\nSection 43.\n\nSubcontract of Personal Data.\n\nA personal information controller may subcontract or outsource the processing of personal data:\n\nProvided,\n\nthat the personal information controller shall use contractual or other reasonable means to ensure that proper safeguards are in place, to ensure the confidentiality, integrity and availability of the personal data processed, prevent its use for unauthorized purposes, and generally, comply with the requirements of the Act, these Rules, other applicable laws for processing of personal data, and other issuances of the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 80,
+            "text": "Section 44.\n\nAgreements for Outsourcing.\n\nProcessing by a personal information processor shall be governed by a contract or other legal act that binds the personal information processor to the personal information controller.\n\nThe contract or legal act shall set out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects, the obligations and rights of the personal information controller, and the geographic location of the processing under the subcontracting agreement.\n\nThe contract or other legal act shall stipulate, in particular, that the personal information processor shall:\n\nProcess the personal data only upon the documented instructions of the personal information controller, including transfers of personal data to another country or an international organization, unless such transfer is authorized by law;\n\nEnsure that an obligation of confidentiality is imposed on persons authorized to process the personal data;\n\nImplement appropriate security measures and comply with the Act, these Rules, and other issuances of the Commission;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 81,
+            "text": "Implement appropriate security measures and comply with the Act, these Rules, and other issuances of the Commission;\n\nNot engage another processor without prior instruction from the personal information controller:\n\nProvided,\n\nthat any such arrangement shall ensure that the same obligations for data protection under the contract or legal act are implemented, taking into account the nature of the processing;\n\nAssist the personal information controller, by appropriate technical and organizational measures and to the extent possible, fulfill the obligation to respond to requests by data subjects relative to the exercise of their rights;\n\nAssist the personal information controller in ensuring compliance with the Act, these Rules, other relevant laws, and other issuances of the Commission, taking into account the nature of processing and the information available to the personal information processor;\n\nAt the choice of the personal information controller, delete or return all personal data to the personal information controller after the end of the provision of services relating to the processing:\n\nProvided,",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 82,
+            "text": "Provided,\n\nthat this includes deleting existing copies unless storage is authorized by the Act or another law;\n\nMake available to the personal information controller all information necessary to demonstrate compliance with the obligations laid down in the Act, and allow for and contribute to audits, including inspections, conducted by the personal information controller or another auditor mandated by the latter;\n\nImmediately inform the personal information controller if, in its opinion, an instruction infringes the Act, these Rules, or any other issuance of the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 83,
+            "text": "Section 45.\n\nDuty of personal information processor.\n\nThe personal information processor shall comply with the requirements of the Act, these Rules, other applicable laws, and other issuances of the Commission, in addition to obligations provided in a contract, or other legal act with a personal information controller.\n\nRule XI. Registration and Compliance Requirements",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 84,
+            "text": "Rule XI. Registration and Compliance Requirements\n\nSection 46. Enforcement of the Data Privacy Act.\n\nPursuant to the mandate of the Commission to administer and implement the Act, and to ensure the compliance of personal information controllers with its obligations under the law, the Commission requires the following:\n\nRegistration of personal data processing systems operating in the country that involves accessing or requiring sensitive personal information of at least one thousand (1,000) individuals, including the personal data processing system of contractors, and their personnel, entering into contracts with government agencies;\n\nNotification of automated processing operations where the processing becomes the sole basis of making decisions that would significantly affect the data subject;\n\nAnnual report of the summary of documented security incidents and personal data breaches;\n\nCompliance with other requirements that may be provided in other issuances of the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 85,
+            "text": "Section 47.\n\nRegistration of Personal Data Processing Systems.\n\nThe personal information controller or personal information processor that employs fewer than two hundred fifty (250) persons shall not be required to register unless the processing it carries out is likely to pose a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes sensitive personal information of at least one thousand (1,000) individuals.\n\nThe contents of registration shall include:\n\nThe name and address of the personal information controller or personal information processor, and of its representative, if any, including their contact details;\n\nThe purpose or purposes of the processing, and whether processing is being done under an outsourcing or subcontracting agreement;\n\nA description of the category or categories of data subjects, and of the data or categories of data relating to them;\n\nThe recipients or categories of recipients to whom the data might be disclosed;\n\nProposed transfers of personal data outside the Philippines;\n\nA general description of privacy and security measures for data protection;\n\nBrief description of the data processing system;",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 86,
+            "text": "A general description of privacy and security measures for data protection;\n\nBrief description of the data processing system;\n\nCopy of all policies relating to data governance, data privacy, and information security;\n\nAttestation to all certifications attained that are related to information and communications processing; and\n\nName and contact details of the compliance or data protection officer, which shall immediately be updated in case of changes.\n\nThe procedure for registration shall be in accordance with these Rules and other issuances of the Commission.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 87,
+            "text": "Section 48.\n\nNotification of Automated Processing Operations.\n\nThe personal information controller carrying out any wholly or partly automated processing operations or set of such operations intended to serve a single purpose or several related purposes shall notify the Commission when the automated processing becomes the sole basis for making decisions about a data subject, and when the decision would significantly affect the data subject.\n\nThe notification shall include the following information:\n\nPurpose of processing;\n\nCategories of personal data to undergo processing;\n\nCategory or categories of data subject;\n\nConsent forms or manner of obtaining consent;\n\nThe recipients or categories of recipients to whom the data are to be disclosed;\n\nThe length of time the data are to be stored;\n\nMethods and logic utilized for automated processing;\n\nDecisions relating to the data subject that would be made on the basis of processed data or that would significantly affect the rights and freedoms of data subject; and\n\nNames and contact details of the compliance or data protection officer.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 88,
+            "text": "Names and contact details of the compliance or data protection officer.\n\nNo decision with legal effects concerning a data subject shall be made solely on the basis of automated processing without the consent of the data subject.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 89,
+            "text": "Section 49.\n\nReview by the Commission.\n\nThe following are subject to the review of the Commission, upon its own initiative or upon the filing of a complaint by a data subject:\n\nCompliance by a personal information controller or personal information processor with the Act, these Rules, and other issuances of the Commission;\n\nCompliance by a personal information controller or personal information processor with the requirement of establishing adequate safeguards for data privacy and security;\n\nAny data sharing agreement, outsourcing contract, and similar contracts involving the processing of personal data, and its implementation;\n\nAny off-site or online access to sensitive personal data in government allowed by a head of agency;\n\nProcessing of personal data for research purposes, public functions, or commercial activities;\n\nAny reported violation of the rights and freedoms of data subjects;\n\nOther matters necessary to ensure the effective implementation and administration of the Act, these Rules, and other issuances of the Commission.\n\nRule XII. Rules on Accountability",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 90,
+            "text": "Rule XII. Rules on Accountability\n\nSection 50.\n\nAccountability for Transfer of Personal Data.\n\nA personal information controller shall be responsible for any personal data under its control or custody, including information that have been outsourced or transferred to a personal information processor or a third party for processing, whether domestically or internationally, subject to cross-border arrangement and cooperation.\n\nA personal information controller shall be accountable for complying with the requirements of the Act, these Rules, and other issuances of the Commission. It shall use contractual or other reasonable means to provide a comparable level of protection to the personal data while it is being processed by a personal information processor or third party.\n\nA personal information controller shall designate an individual or individuals who are accountable for its compliance with the Act. The identity of the individual or individuals so designated shall be made known to a data subject upon request.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 91,
+            "text": "Section 51.\n\nAccountability for Violation of the Act, these Rules and Other Issuances of the Commission.\n\nAny natural or juridical person, or other body involved in the processing of personal data, who fails to comply with the Act, these Rules, and other issuances of the Commission, shall be liable for such violation, and shall be subject to its corresponding sanction, penalty, or fine, without prejudice to any civil or criminal liability, as may be applicable.\n\nIn cases where a data subject files a complaint for violation of his or her rights as data subject, and for any injury suffered as a result of the processing of his or her personal data, the Commission may award indemnity on the basis of the applicable provisions of the New Civil Code.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 92,
+            "text": "In case of criminal acts and their corresponding personal penalties, the person who committed the unlawful act or omission shall be recommended for prosecution by the Commission based on substantial evidence. If the offender is a corporation, partnership, or any juridical person, the responsible officers, as the case may be, who participated in, or by their gross negligence, allowed the commission of the crime, shall be recommended for prosecution by the Commission based on substantial evidence.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 93,
+            "text": "Rule XIII. Penalties\n\nSection 52.\n\nUnauthorized Processing of Personal Information and Sensitive Personal Information.\n\nA penalty of imprisonment ranging from one (1) year to three (3) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Two million pesos (Php2,000,000.00) shall be imposed on persons who process personal information without the consent of the data subject, or without being authorized under the Act or any existing law.\n\nA penalty of imprisonment ranging from three (3) years to six (6) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Four million pesos (Php4,000,000.00) shall be imposed on persons who process sensitive personal information without the consent of the data subject, or without being authorized under the Act or any existing law.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 94,
+            "text": "Section 53.\n\nAccessing Personal Information and Sensitive Personal Information Due to Negligence.\n\nA penalty of imprisonment ranging from one (1) year to three (3) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Two million pesos (Php2,000,000.00) shall be imposed on persons who, due to negligence, provided access to personal information without being authorized under the Act or any existing law.\n\nA penalty of imprisonment ranging from three (3) years to six (6) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Four million pesos (Php4,000,000.00) shall be imposed on persons who, due to negligence, provided access to sensitive personal information without being authorized under the Act or any existing law.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 95,
+            "text": "Section 54.\n\nImproper Disposal of Personal Information and Sensitive Personal Information.\n\nA penalty of imprisonment ranging from six (6) months to two (2) years and a fine of not less than One hundred thousand pesos (Php100,000.00) but not more than Five hundred thousand pesos (Php500,000.00) shall be imposed on persons who knowingly or negligently dispose, discard, or abandon the personal information of an individual in an area accessible to the public or has otherwise placed the personal information of an individual in its container for trash collection.\n\nA penalty of imprisonment ranging from one (1) year to three (3) years and a fine of not less than One hundred thousand pesos (Php100,000.00) but not more than One million pesos (Php1,000,000.00) shall be imposed on persons who knowingly or negligently dispose, discard or abandon the sensitive personal information of an individual in an area accessible to the public or has otherwise placed the sensitive personal information of an individual in its container for trash collection.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 96,
+            "text": "Section 55.\n\nProcessing of Personal Information and Sensitive Personal Information for Unauthorized Purposes.\n\nA penalty of imprisonment ranging from one (1) year and six (6) months to five (5) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than One million pesos (Php1,000,000.00) shall be imposed on persons processing personal information for purposes not authorized by the data subject, or otherwise authorized under the Act or under existing laws.\n\nA penalty of imprisonment ranging from two (2) years to seven (7) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Two million pesos (Php2,000,000.00) shall be imposed on persons processing sensitive personal information for purposes not authorized by the data subject, or otherwise authorized under the Act or under existing laws.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 97,
+            "text": "Section 56.\n\nUnauthorized Access or Intentional Breach.\n\nA penalty of imprisonment ranging from one (1) year to three (3) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Two million pesos (Php2,000,000.00) shall be imposed on persons who knowingly and unlawfully, or violating data confidentiality and security data systems, breaks in any way into any system where personal and sensitive personal information are stored.\n\nSection 57.\n\nConcealment of Security Breaches Involving Sensitive Personal Information.\n\nA penalty of imprisonment ranging from one (1) year and six (6) months to five (5) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than One million pesos (Php1,000,000.00) shall be imposed on persons who, after having knowledge of a security breach and of the obligation to notify the Commission pursuant to Section 20(f) of the Act, intentionally or by omission conceals the fact of such security breach.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 98,
+            "text": "Section 58. Malicious Disclosure.\n\nAny personal information controller or personal information processor, or any of its officials, employees or agents, who, with malice or in bad faith, discloses unwarranted or false information relative to any personal information or sensitive personal information obtained by him or her, shall be subject to imprisonment ranging from one (1) year and six (6) months to five (5) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than One million pesos (Php1,000,000.00).",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 99,
+            "text": "Section 59.\n\nUnauthorized Disclosure.\n\nAny personal information controller or personal information processor, or any of its officials, employees, or agents, who discloses to a third party personal information not covered by the immediately preceding section without the consent of the data subject, shall be subject to imprisonment ranging from one (1) year to three (3) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than One million pesos (Php1,000,000.00).\n\nAny personal information controller or personal information processor, or any of its officials, employees or agents, who discloses to a third party sensitive personal information not covered by the immediately preceding section without the consent of the data subject, shall be subject to imprisonment ranging from three (3) years to five (5) years and a fine of not less than Five hundred thousand pesos (Php500,000.00) but not more than Two million pesos (Php2,000,000.00).",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 100,
+            "text": "Section 60.\n\nCombination or Series of Acts.\n\nAny combination or series of acts as defined in Sections 52 to 59 shall make the person subject to imprisonment ranging from three (3) years to six (6) years and a fine of not less than One million pesos (Php1,000,000.00) but not more than Five million pesos (Php5,000,000.00).\n\nSection 61.\n\nExtent of Liability.\n\nIf the offender is a corporation, partnership or any juridical person, the penalty shall be imposed upon the responsible officers, as the case may be, who participated in, or by their gross negligence, allowed the commission of the crime. Where applicable, the court may also suspend or revoke any of its rights under this Act.\n\nIf the offender is an alien, he or she shall, in addition to the penalties herein prescribed, be deported without further proceedings after serving the penalties prescribed.\n\nIf the offender is a public official or employee and he or she is found guilty of acts penalized under Sections 54 and 55 of these Rules, he or she shall, in addition to the penalties prescribed herein, suffer perpetual or temporary absolute disqualification from office, as the case may be.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 101,
+            "text": "Section 62.\n\nLarge-Scale.\n\nThe maximum penalty in the corresponding scale of penalties provided for the preceding offenses shall be imposed when the personal data of at least one hundred (100) persons are harmed, affected, or involved, as the result of any of the above-mentioned offenses.\n\nSection 63.\n\nOffense Committed by Public Officer.\n\nWhen the offender or the person responsible for the offense is a public officer, as defined in the Administrative Code of 1987, in the exercise of his or her duties, he or she shall likewise suffer an accessory penalty consisting of disqualification to occupy public office for a term double the term of the criminal penalty imposed.\n\nSection 64.\n\nRestitution.\n\nPursuant to the exercise of its quasi-judicial functions, the Commission shall award indemnity to an aggrieved party on the basis of the provisions of the New Civil Code. Any complaint filed by a data subject shall be subject to the payment of filing fees, unless the data subject is an indigent.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 102,
+            "text": "Section 65.\n\nFines and Penalties.\n\nViolations of the Act, these Rules, other issuances and orders of the Commission, shall, upon notice and hearing, be subject to compliance and enforcement orders, cease and desist orders, temporary or permanent ban on the processing of personal data, or payment of fines, in accordance with a schedule to be published by the Commission.\n\nRule XIV. Miscellaneous Provisions\n\nSection 66.\n\nAppeal.\n\nAppeal from final decisions of the Commission shall be made to the proper courts in accordance with the Rules of Court, or as may be prescribed by law.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 103,
+            "text": "Section 67.\n\nPeriod for Compliance.\n\nAny natural or juridical person or other body involved in the processing of personal data shall comply with the personal data processing principles and standards of personal data privacy and security already laid out in the Act.\n\nPersonal information controllers and Personal Information processors shall register with the Commission their data processing systems or automated processing operations, subject to notification, within one (1) year after the effectivity of these Rules. Any subsequent issuance of the Commission, including those that implement specific standards for data portability, encryption, or other security measures shall provide the period for its compliance.\n\nFor a period of one (1) year from the effectivity of these Rules, a personal information controller or personal information processor may apply for an extension of the period within which to comply with the issuances of the Commission. The Commission may grant such request for good cause shown.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 104,
+            "text": "Section 68.\n\nAppropriations Clause.\n\nThe Commission shall be provided with appropriations for the performance of its functions which shall be included in the General Appropriations Act.\n\nSection 69.\n\nInterpretation.\n\nAny doubt in the interpretation of any provision of this Act shall be liberally interpreted in a manner that would uphold the rights and interests of the individual about whom personal data is processed.\n\nSection 70.\n\nSeparability Clause.\n\nIf any provision or part hereof is held invalid or unconstitutional, the remainder of these Rules or the provision not otherwise affected shall remain valid and subsisting.\n\nSection 71.\n\nRepealing Clause.\n\nExcept as otherwise expressly provided in the Act or these Rules, all other laws, decrees, executive orders, proclamations and administrative regulations or parts thereof inconsistent herewith are hereby repealed or modified accordingly.",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        },
+        {
+            "chunk_index": 105,
+            "text": "Section 72.\n\nEffectivity Clause.\n\nThese Rules shall take effect fifteen (15) days after its publication in the\n\nOfficial Gazette.\n\nApproved:\n\n(Sgd.)\n\nRAYMUND E. LIBORO\n\nPrivacy Commissioner\n\n(Sgd.)\n\nIVY D. PATDU\n\nDeputy Privacy Commissioner\n\n(Sgd.)\n\nDAMIAN DOMINGO O. MAPA\n\nDeputy Privacy Commissioner\n\nPromulgated: August 24, 2016",
+            "metadata": {
+                "law_id": "RA_10173_IRR",
+                "date": "August 24, 2016"
+            }
+        }
+    ]
+}
