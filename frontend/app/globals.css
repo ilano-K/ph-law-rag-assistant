@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  /* Minimalist dark-mode foundation */
+  --color-background: #070705;
+  --color-surface: #131313;
+  --color-foreground: #d4d4d8;
+  --color-accent: #fb6a71;
+  --color-border: #333230;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
