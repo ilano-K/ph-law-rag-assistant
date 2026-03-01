@@ -14,3 +14,25 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Reusable gradient text class */
+.text-gradient-accent {
+  background: linear-gradient(90deg, var(--color-accent), #ff8a71, #ffb371);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Reusable gradient type bar */
+.bg-gradient-accent-blur {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 106, 113, 0.4),
+    rgba(255, 138, 128, 0.4),
+    rgba(255, 176, 176, 0.4)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* for Safari */
+  border: 1px solid var(--color-border);
+  border-radius: 9999px; /* fully rounded */
+  overflow: hidden; /* ensures blur and gradient don’t spill */
+}

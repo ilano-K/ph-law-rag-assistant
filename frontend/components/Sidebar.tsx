@@ -22,7 +22,7 @@ export default function Sidebar({ onViewChange }: SidebarProps) {
           onClick={() => onViewChange("history")}
           className="flex items-center gap-3 px-3 py-2.5 hover:bg-white/5 rounded-md transition-colors text-left w-full"
         >
-          <History size={18} className="text-accent" />
+          <History size={22} className="text-accent" />
           <span>History</span>
         </button>
         {/*Discover button*/}
@@ -30,7 +30,7 @@ export default function Sidebar({ onViewChange }: SidebarProps) {
           onClick={() => onViewChange("discover")}
           className="flex items-center gap-3 px-3 py-2.5 hover:bg-white/5 rounded-md transition-colors text-left w-full"
         >
-          <Compass size={18} className="text-accent" />
+          <Compass size={22} className="text-accent" />
           <span>Discover</span>
         </button>
       </div>
