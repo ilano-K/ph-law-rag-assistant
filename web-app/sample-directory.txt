@@ -1,0 +1,16 @@
+/web-app/src
+│
+├── /app                     <-- THE ACTUAL FRONTEND PAGES
+│   ├── layout.tsx           # The master HTML shell. You'd set your dark mode background color here.
+│   ├── page.tsx             # The main screen. This is your Chat Interface.
+│   └── globals.css          # Your global styles (where you define your cyan or pastel red accent variables for a minimalist look).
+│
+├── /components              <-- YOUR REUSABLE REACT UI PIECES
+│   ├── ChatWindow.tsx       # The main container holding the conversation.
+│   ├── MessageBubble.tsx    # The individual text bubbles for the user and the AI.
+│   ├── SearchInput.tsx      # The text bar at the bottom where the user types.
+│   └── CitationCard.tsx     # A cool custom UI component to display the specific Republic Act the AI cites.
+│
+└── /api                     <-- THE TYPESCRIPT "MIDDLEMAN"
+    └── /chat
+        └── route.ts         # This is the Vercel AI SDK endpoint. It is NOT a UI page.

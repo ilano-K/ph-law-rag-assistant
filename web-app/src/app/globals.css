@@ -36,3 +36,12 @@ body {
   border-radius: 9999px; /* fully rounded */
   overflow: hidden; /* ensures blur and gradient don’t spill */
 }
+
+textarea {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+textarea::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
