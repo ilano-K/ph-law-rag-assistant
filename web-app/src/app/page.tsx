@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
-import ChatView from "../views/ChatView";
+import ChatView from "../components/chat/ChatView";
 import HistoryView from "../views/HistoryView";
 import DiscoverView from "../views/DiscoverView";
 

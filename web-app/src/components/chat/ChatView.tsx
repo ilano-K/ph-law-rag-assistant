@@ -1,7 +1,6 @@
 "use client"; // Required for Vercel AI SDK hooks
 
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
+import MarkdownRenderer from "./MarkdownRenderer";
 import React, { useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { ArrowUp, Scale } from "lucide-react"; // Assuming you are using lucide-react
@@ -123,83 +122,9 @@ export default function ChatView() {
                           key={`${msg.id}-${i}`}
                           className="max-w-none text-foreground"
                         >
-                          <ReactMarkdown
-                            remarkPlugins={[remarkGfm]}
-                            components={{
-                              // Add margins to paragraphs
-                              p: ({ node, ...props }) => (
-                                <p
-                                  className="mb-4 leading-relaxed last:mb-0"
-                                  {...props}
-                                />
-                              ),
-
-                              // Style bulleted lists with actual discs and padding
-                              ul: ({ node, ...props }) => (
-                                <ul
-                                  className="list-disc pl-6 mb-4 space-y-2"
-                                  {...props}
-                                />
-                              ),
-
-                              // Style numbered lists
-                              ol: ({ node, ...props }) => (
-                                <ol
-                                  className="list-decimal pl-6 mb-4 space-y-2"
-                                  {...props}
-                                />
-                              ),
-
-                              // List items
-                              li: ({ node, ...props }) => (
-                                <li className="pl-1" {...props} />
-                              ),
-
-                              // Headings
-                              h1: ({ node, ...props }) => (
-                                <h1
-                                  className="text-2xl font-bold mb-4 mt-6"
-                                  {...props}
-                                />
-                              ),
-                              h2: ({ node, ...props }) => (
-                                <h2
-                                  className="text-xl font-bold mb-3 mt-5 text-cyan-400"
-                                  {...props}
-                                />
-                              ),
-                              h3: ({ node, ...props }) => (
-                                <h3
-                                  className="text-lg font-bold mb-2 mt-4"
-                                  {...props}
-                                />
-                              ),
-
-                              // Make bold text pop a bit more in dark mode
-                              strong: ({ node, ...props }) => (
-                                <strong
-                                  className="font-semibold text-white"
-                                  {...props}
-                                />
-                              ),
-
-                              // Keep your code block styling
-                              pre: ({ node, ...props }) => (
-                                <pre
-                                  className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 mb-4 overflow-x-auto"
-                                  {...props}
-                                />
-                              ),
-                              code: ({ node, ...props }) => (
-                                <code
-                                  className="text-cyan-400 font-mono text-sm"
-                                  {...props}
-                                />
-                              ),
-                            }}
-                          >
+                          <MarkdownRenderer key={i}>
                             {part.text}
-                          </ReactMarkdown>
+                          </MarkdownRenderer>
                         </div>
                       );
                     }
