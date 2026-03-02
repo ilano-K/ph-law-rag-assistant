@@ -121,9 +121,83 @@ export default function ChatView() {
                         /* Move the key and classes to the div to stop the TS error */
                         <div
                           key={`${msg.id}-${i}`}
-                          className="prose prose-invert max-w-none prose-p:leading-relaxed prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-800 prose-code:text-cyan-400"
+                          className="max-w-none text-foreground"
                         >
-                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                          <ReactMarkdown
+                            remarkPlugins={[remarkGfm]}
+                            components={{
+                              // Add margins to paragraphs
+                              p: ({ node, ...props }) => (
+                                <p
+                                  className="mb-4 leading-relaxed last:mb-0"
+                                  {...props}
+                                />
+                              ),
+
+                              // Style bulleted lists with actual discs and padding
+                              ul: ({ node, ...props }) => (
+                                <ul
+                                  className="list-disc pl-6 mb-4 space-y-2"
+                                  {...props}
+                                />
+                              ),
+
+                              // Style numbered lists
+                              ol: ({ node, ...props }) => (
+                                <ol
+                                  className="list-decimal pl-6 mb-4 space-y-2"
+                                  {...props}
+                                />
+                              ),
+
+                              // List items
+                              li: ({ node, ...props }) => (
+                                <li className="pl-1" {...props} />
+                              ),
+
+                              // Headings
+                              h1: ({ node, ...props }) => (
+                                <h1
+                                  className="text-2xl font-bold mb-4 mt-6"
+                                  {...props}
+                                />
+                              ),
+                              h2: ({ node, ...props }) => (
+                                <h2
+                                  className="text-xl font-bold mb-3 mt-5 text-cyan-400"
+                                  {...props}
+                                />
+                              ),
+                              h3: ({ node, ...props }) => (
+                                <h3
+                                  className="text-lg font-bold mb-2 mt-4"
+                                  {...props}
+                                />
+                              ),
+
+                              // Make bold text pop a bit more in dark mode
+                              strong: ({ node, ...props }) => (
+                                <strong
+                                  className="font-semibold text-white"
+                                  {...props}
+                                />
+                              ),
+
+                              // Keep your code block styling
+                              pre: ({ node, ...props }) => (
+                                <pre
+                                  className="bg-zinc-900 border border-zinc-800 rounded-lg p-4 mb-4 overflow-x-auto"
+                                  {...props}
+                                />
+                              ),
+                              code: ({ node, ...props }) => (
+                                <code
+                                  className="text-cyan-400 font-mono text-sm"
+                                  {...props}
+                                />
+                              ),
+                            }}
+                          >
                             {part.text}
                           </ReactMarkdown>
                         </div>
