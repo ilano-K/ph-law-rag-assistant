@@ -5,9 +5,9 @@ from typing import Optional, Literal, List
 class LegalMetadata(BaseModel):
     chunk_index: str 
     law_id: str 
-    document_type : Literal['republic_act'] 
+    document_type : Literal['republic_act'] = Field(description="I'll add more later on (e.g,. Supreme Court Cases)")
     date_approved: str 
-    title: str 
+    title: str = Field("Title of the document the chunk was based on")
     source_url: str 
 
 # Chunk
