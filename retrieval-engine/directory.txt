@@ -1,0 +1,13 @@
+api/
+├── main.py                 # FastAPI application instance & middleware
+├── core/
+│   ├── config.py           # Pydantic BaseSettings for env vars (API keys)
+│   └── exceptions.py       # Custom HTTP exception handlers
+├── models/
+│   ├── request.py          # Pydantic input validation (e.g., HybridSearchQuery)
+│   └── response.py         # Pydantic output schemas (e.g., LegalDocumentChunk)
+├── services/
+│   ├── embedding.py        # Handles Jina v2 dense encoding and BM25 sparse encoding
+│   └── retrieval.py        # Executes the Pinecone hybrid query
+└── routers/
+    └── search.py           # The actual API endpoints (e.g., POST /v1/search)
