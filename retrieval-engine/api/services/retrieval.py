@@ -1,0 +1,60 @@
+from pinecone import Pinecone 
+from api.core.config import settings
+from api.models.response import HybridSearchResponse
+from api.models.request import RAGRequest
+from api.services.embeddings import generate_hybrid_vectors
+from fastapi import HTTPException
+from api.core.logger import get_logger
+
+logger = get_logger(__name__)
+
+pc = Pinecone(api_key=settings.PINECONE_API_KEY)
+index = pc.Index(settings.PINECONE_INDEX_NAME)
+
+def hybrid_scale(dense_vec, sparse_vec, alpha: float):
+    if alpha < 0 or alpha > 1:
+        raise ValueError("Alpha must be between 0 and 1")
+    hdense = [v * alpha for v in dense_vec]
+    hsparse = {
+        'indices': sparse_vec['indices'],
+        'values': [v * (1 - alpha) for v in sparse_vec['values']]
+    }
+    return hdense, hsparse
+
+def retrieve_chunks(top_k: int, dense_vec, sparse_vec, alpha=0.5):
+    hdense, hsparse = hybrid_scale(dense_vec, sparse_vec, alpha)
+    
+    results = index.query(
+        vector=hdense,
+        sparse_vector=hsparse,
+        top_k=top_k,
+        include_metadata=True,
+    )
+    return results 
+
+def process_retrieval_request(request: RAGRequest):
+    try:
+        logger.info(f"Retrieval started | query='{request.query_text}' | top_k={request.top_k}")
+        dense_vec, sparse_vec = generate_hybrid_vectors(request.query_text)
+        
+        raw_results = retrieve_chunks(request.top_k, dense_vec, sparse_vec, request.alpha)
+        logger.info(f"Pinecone returned {len(raw_results['matches'])} matches")
+        safe_matches = []
+        for match in raw_results.matches:
+            safe_matches.append({
+                "id": match.id,
+                "score": match.score,
+                "metadata": match.metadata
+            })
+            
+        return HybridSearchResponse(
+            query=request.query_text,
+            results=safe_matches
+        )
+    except Exception as e:
+        logger.exception(f"Retrieval failed | query='{request.query_text}'")
+        
+        raise HTTPException(
+            status_code=400,
+            detail='Retrieval Failed'
+        )
