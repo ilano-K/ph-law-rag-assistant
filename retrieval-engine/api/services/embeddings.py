@@ -2,7 +2,7 @@ from pinecone_text.sparse import BM25Encoder
 from sentence_transformers import SentenceTransformer
 from pathlib import Path
 import torch
-
+from api.core.exceptions import EmbeddingGenerationError
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 BM25_PATH = BASE_DIR / "data" / "bm25_weights.json"
@@ -15,11 +15,14 @@ dense_model = SentenceTransformer('jinaai/jina-embeddings-v2-base-en', trust_rem
 dense_model.to(device)
 
 def generate_hybrid_vectors(query: str):
-    # Generate dense vector
-    with torch.inference_mode():
-        dense_vector = dense_model.encode(query, convert_to_numpy=True).tolist()
+    try:
+        # Generate dense vector
+        with torch.inference_mode():
+            dense_vector = dense_model.encode(query, convert_to_numpy=True).tolist()
+            
+        # Generate sparse vector
+        sparse_vector = bm25.encode_queries(query)
         
-    # Generate sparse vector
-    sparse_vector = bm25.encode_queries(query)
-    
-    return dense_vector, sparse_vector
+        return dense_vector, sparse_vector
+    except:
+        raise EmbeddingGenerationError()

@@ -5,6 +5,7 @@ from api.models.request import RAGRequest
 from api.services.embeddings import generate_hybrid_vectors
 from fastapi import HTTPException
 from api.core.logger import get_logger
+from api.core.exceptions import BaseAppException, EmptyQueryError, NoRelevantLawsFoundError, DatabaseTimeoutError
 
 logger = get_logger(__name__)
 
@@ -23,16 +24,26 @@ def hybrid_scale(dense_vec, sparse_vec, alpha: float):
 
 def retrieve_chunks(top_k: int, dense_vec, sparse_vec, alpha=0.5):
     hdense, hsparse = hybrid_scale(dense_vec, sparse_vec, alpha)
-    
-    results = index.query(
-        vector=hdense,
-        sparse_vector=hsparse,
-        top_k=top_k,
-        include_metadata=True,
-    )
+    try:
+        results = index.query(
+            vector=hdense,
+            sparse_vector=hsparse,
+            top_k=top_k,
+            include_metadata=True,
+        )
+    except:
+        raise DatabaseTimeoutError()
+    if not results.matches:
+           raise  NoRelevantLawsFoundError()
+        
+    best_score = results.matches[0].score 
+    if best_score < 0.15:
+        raise NoRelevantLawsFoundError()
     return results 
 
 def process_retrieval_request(request: RAGRequest):
+    if not request.query_text.strip():
+        raise EmptyQueryError()
     try:
         logger.info(f"Retrieval started | query='{request.query_text}' | top_k={request.top_k}")
         dense_vec, sparse_vec = generate_hybrid_vectors(request.query_text)
@@ -51,10 +62,10 @@ def process_retrieval_request(request: RAGRequest):
             query=request.query_text,
             results=safe_matches
         )
-    except Exception as e:
-        logger.exception(f"Retrieval failed | query='{request.query_text}'")
+    except BaseAppException as e:
+        logger.warning(f"Business logic error triggered: {e.error_code}")
+        raise e 
         
-        raise HTTPException(
-            status_code=400,
-            detail='Retrieval Failed'
-        )
+    except Exception as e:
+        logger.exception(f"Unexpected retrieval failure | query='{request.query_text}'")
+        raise e
