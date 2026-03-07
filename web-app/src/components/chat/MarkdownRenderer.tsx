@@ -1,4 +1,4 @@
-"use_client";
+"use client";
 
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -22,10 +22,7 @@ export default function MarkdownRenderer({ children }: { children: string }) {
           <h1 className="text-2xl font-bold mb-4 mt-6" {...props} />
         ),
         h2: (props) => (
-          <h2
-            className="text-xl font-bold mb-3 mt-5 text-cyan-400"
-            {...props}
-          />
+          <h2 className="text-xl font-medium mb-3 mt-5 text-white" {...props} />
         ),
         h3: (props) => (
           <h3 className="text-lg font-bold mb-2 mt-4" {...props} />
@@ -40,7 +37,7 @@ export default function MarkdownRenderer({ children }: { children: string }) {
           />
         ),
         code: (props) => (
-          <code className="text-cyan-400 font-mono text-sm" {...props} />
+          <code className="text-white-400 font-mono text-sm" {...props} />
         ),
       }}
     >
