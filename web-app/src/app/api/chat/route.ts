@@ -4,12 +4,12 @@ import { streamText, UIMessage, convertToModelMessages, createUIMessageStreamRes
   ModelMessage} from "ai";
 import { google } from "@ai-sdk/google";
 // prettier-ignore
-import { INTENT_SYSTEM_PROMPT, LEGAL_SYSTEM_PROMPT} from "@/src/lib/ai/prompts";
+import { INTENT_SYSTEM_PROMPT, LEGAL_SYSTEM_PROMPT} from "@/src/helpers/ai/prompts";
 // prettier-ignore
 import { intentSchema } from "@/src/types/intent"
-import { writeFallBackMessage } from "@/src/lib/ai/intent";
-import { prepareRagPrompt } from "@/src/lib/ai/rag";
-import { generateConversationTitle } from "@/src/lib/ai/generateTitle";
+import { writeFallBackMessage } from "@/src/helpers/ai/intent";
+import { prepareRagPrompt } from "@/src/helpers/ai/rag";
+import { generateConversationTitle } from "@/src/helpers/ai/generateTitle";
 
 export async function POST(req: Request) {
   // 1. Messages
