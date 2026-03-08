@@ -5,6 +5,7 @@ import {
   createUIMessageStreamResponse,
   createUIMessageStream,
   generateText,
+  Output,
 } from "ai";
 
 import { google } from "@ai-sdk/google";
@@ -14,6 +15,7 @@ import {
   RetrieveDocsResult,
 } from "@/src/types/retrieval";
 import { buildRagPrompt, LEGAL_SYSTEM_PROMPT } from "@/src/lib/prompts";
+import { intentSchema } from "@/src/types/ai";
 
 export async function POST(req: Request) {
   // 1. Messages
@@ -26,30 +28,16 @@ export async function POST(req: Request) {
     text: string;
   };
 
-  // 2.
-  const body: RetrieveDocsRequest = {
-    query_text: recentMessage?.text,
-    top_k: 5,
-    alpha: 0.5,
-  };
+  const conversation = await convertToModelMessages(messages);
 
-  const searchResponse = await fetch("http://localhost:8000/api/v1/retrieve", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(body),
+  // 2. Parse user intent
+  const { output: intent } = await generateText({
+    model: google("gemini-2.5-flash-lite"),
+    messages: conversation,
+    output: Output.object({
+      schema: intentSchema,
+    }),
   });
-
-  const searchResults: RetrieveDocsResponse = await searchResponse.json();
-  const contextMetadata = searchResults.results.map(
-    (result: RetrieveDocsResult) => result.metadata,
-  );
-
-  const ragPrompt: string = buildRagPrompt(
-    recentMessage?.text,
-    contextMetadata,
-  );
 
   const stream = createUIMessageStream({
     async execute({ writer }) {
@@ -63,8 +51,41 @@ export async function POST(req: Request) {
       //       writer.write({ type: "data-title", data: { title: text.trim() } });
       //     })
       //     .catch(console.error);
-      const conversation = await convertToModelMessages(messages);
-      conversation[conversation.length - 1].content = ragPrompt;
+
+      // intent
+      if (intent.needsSearch) {
+        const body: RetrieveDocsRequest = {
+          query_text: recentMessage?.text,
+          top_k: 5,
+          alpha: 0.5,
+        };
+
+        const searchResponse = await fetch(
+          "http://localhost:8000/api/v1/retrieve",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
+          },
+        );
+
+        const searchResults: RetrieveDocsResponse = await searchResponse.json();
+        const contextMetadata = searchResults.results.map(
+          (result: RetrieveDocsResult) => result.metadata,
+        );
+
+        const ragPrompt: string = buildRagPrompt(
+          recentMessage?.text,
+          contextMetadata,
+        );
+
+        const conversation = await convertToModelMessages(messages);
+        conversation[conversation.length - 1].content = ragPrompt;
+      }
+
+      // conversation
       const result = streamText({
         model: google("gemini-2.5-flash"),
         messages: conversation,
