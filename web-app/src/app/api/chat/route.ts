@@ -14,14 +14,11 @@ import { generateConversationTitle } from "@/src/lib/ai/generateTitle";
 export async function POST(req: Request) {
   // 1. Messages
   const { messages }: { messages: UIMessage[] } = await req.json();
-
   const firstMessage = messages[0].parts[0] as { type: string; text: string };
-
   const recentMessage = messages[messages.length - 1].parts[0] as {
     type: string;
     text: string;
   };
-
   const conversation: ModelMessage[] = await convertToModelMessages(messages);
 
   // 2. Parse user intent
@@ -34,6 +31,7 @@ export async function POST(req: Request) {
     }),
   });
 
+  // 3. Execute stream of llm calls
   const stream = createUIMessageStream({
     async execute({ writer }) {
       if (messages.length === 1)
