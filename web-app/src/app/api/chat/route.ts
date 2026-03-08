@@ -14,7 +14,11 @@ import {
   RetrieveDocsResponse,
   RetrieveDocsResult,
 } from "@/src/types/retrieval";
-import { buildRagPrompt, LEGAL_SYSTEM_PROMPT } from "@/src/lib/prompts";
+import {
+  buildRagPrompt,
+  INTENT_SYSTEM_PROMPT,
+  LEGAL_SYSTEM_PROMPT,
+} from "@/src/lib/prompts";
 import { intentSchema } from "@/src/types/ai";
 
 export async function POST(req: Request) {
@@ -34,6 +38,7 @@ export async function POST(req: Request) {
   const { output: intent } = await generateText({
     model: google("gemini-2.5-flash-lite"),
     messages: conversation,
+    system: INTENT_SYSTEM_PROMPT,
     output: Output.object({
       schema: intentSchema,
     }),
@@ -53,7 +58,8 @@ export async function POST(req: Request) {
       //     .catch(console.error);
 
       // intent
-      if (intent.needsSearch) {
+      if (intent.userIntent === "search") {
+        console.log("INTENT IS NEEDS SEARCH");
         const body: RetrieveDocsRequest = {
           query_text: recentMessage?.text,
           top_k: 5,
@@ -83,6 +89,28 @@ export async function POST(req: Request) {
 
         const conversation = await convertToModelMessages(messages);
         conversation[conversation.length - 1].content = ragPrompt;
+      } else if (intent.userIntent === "none") {
+        console.log("INTENT IS NONE - Short-circuiting LLM to save credits");
+
+        // Create a unique ID for this specific manual message
+        const fallbackId = `fallback-${Date.now()}`;
+
+        // 1. Tell the UI a new AI text block is starting
+        writer.write({ type: "text-start", id: fallbackId });
+
+        // 2. Instantly push your exact fallback string to the chat window
+        writer.write({
+          type: "text-delta",
+          id: fallbackId,
+          delta:
+            "I cannot answer this specific situation based on the provided Philippine laws.",
+        });
+
+        // 3. Tell the UI the message is finished streaming
+        writer.write({ type: "text-end", id: fallbackId });
+
+        // 4. CRITICAL: Exit the function early so it DOES NOT trigger the Gemini streamText below!
+        return;
       }
 
       // conversation
