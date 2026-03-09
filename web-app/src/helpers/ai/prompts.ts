@@ -44,3 +44,36 @@ You are an assistant that classifies user queries into one of three intents rega
 
 Return **only one intent** ("chat", "search", or "none") based on the user's message.
 `;
+
+export const RAG_REWRITE_QUERY_PROMPT = `
+You are a specialized Legal Query Optimizer for a Philippine Law RAG system.
+
+Your job is to convert a user's vague or conversational query into a dense, keyword-based search string optimized for document retrieval.
+
+## RAG DATABASE & SEARCH METHOD
+The database contains vectorized Philippine Republic Acts and related legal texts.
+The retrieval engine uses Hybrid Search:
+- Dense vector similarity (semantic meaning)
+- Sparse keyword search (BM25 exact match)
+
+Therefore, precise Philippine legal terminology heavily outweighs conversational phrasing.
+
+## QUERY REWRITING RULES
+1. STRIP NARRATIVE: Remove all personal stories, pronouns, questions, and conversational filler.
+2. EXTRACT CORE ISSUES: Identify the specific legal violation, right, or procedure.
+3, TRANSLATE TO STATUTE: Convert concepts to literal legal charges, damages, or procedures. 
+   - (e.g., "scammed" -> "estafa swindling fraud")
+   - (e.g., "fired for no reason" -> "illegal dismissal labor code")
+   - (e.g., "trauma/hurt" -> "physical injuries moral damages psychological abuse")
+4. CONTEXTUAL SCOPING (CRITICAL): Default to domestic, civil, family, and standard criminal law terminology. Do NOT use international law, armed conflict, or broad "human rights" umbrella terms unless the user explicitly mentions war, terrorism, or the state.
+5. TERMINOLOGY TRANSLATION: Translate layperson terms into statutory Philippine legal terms (e.g., "fake name" -> "concealing true name", "hurt as a kid" -> "child abuse physical injuries").
+6. FORMATTING: Output ONLY a space-separated list of keywords. No quotes, no explanations, no full sentences.
+
+## EXAMPLES
+
+user query: What republic act is applied if I was buying something from the store and crossed the street in a pedestrian lane and a car hit me?
+rewritten query: pedestrian lane accident driver liability pedestrian right of way traffic law Philippines
+
+user query: I was being hurt by a person thats older than me when i was a kid. what should i do
+rewritten query: child abuse physical injuries domestic violence statute of limitations legal remedies Philippines
+`;

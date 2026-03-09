@@ -1,14 +1,28 @@
 // prettier-ignore
-import { RetrieveDocsRequest, RetrieveDocsResponse,RetrieveDocsResult} from "@/src/types/retrieval";
-import { ModelMessage } from "ai";
-import { buildRagPrompt } from "./prompts";
+import { RAGRequest, RAGResponse,RAGResult, RAGRewriteSchema} from "@/src/types/retrieval";
+import { generateText, ModelMessage, Output } from "ai";
+import { buildRagPrompt, RAG_REWRITE_QUERY_PROMPT } from "./prompts";
+import { google } from "@ai-sdk/google";
 
 export async function prepareRagPrompt(
   recentMessageText: string,
   conversation: ModelMessage[],
 ) {
-  const body: RetrieveDocsRequest = {
-    query_text: recentMessageText,
+  // QUERY REWRITING
+  const { output: query } = await generateText({
+    model: google("gemini-2.5-flash-lite"),
+    prompt: recentMessageText,
+    system: RAG_REWRITE_QUERY_PROMPT,
+    output: Output.object({
+      schema: RAGRewriteSchema,
+    }),
+  });
+
+  console.log("=========================");
+  console.log(query.userQuery);
+  // RAG API
+  const body: RAGRequest = {
+    query_text: query.userQuery,
     top_k: 5,
     alpha: 0.5,
   };
@@ -21,9 +35,9 @@ export async function prepareRagPrompt(
     body: JSON.stringify(body),
   });
 
-  const searchResults: RetrieveDocsResponse = await searchResponse.json();
+  const searchResults: RAGResponse = await searchResponse.json();
   const contextMetadata = searchResults.results.map(
-    (result: RetrieveDocsResult) => result.metadata,
+    (result: RAGResult) => result.metadata,
   );
 
   const ragPrompt: string = buildRagPrompt(recentMessageText, contextMetadata);
