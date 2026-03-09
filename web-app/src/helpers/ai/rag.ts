@@ -1,28 +1,19 @@
 // prettier-ignore
-import { RAGRequest, RAGResponse,RAGResult, RAGRewriteSchema} from "@/src/types/retrieval";
-import { generateText, ModelMessage, Output } from "ai";
-import { buildRagPrompt, RAG_REWRITE_QUERY_PROMPT } from "./prompts";
-import { google } from "@ai-sdk/google";
+import { RAGRequest, RAGResponse,RAGResult} from "@/src/types/retrieval";
+import { ModelMessage } from "ai";
+import { buildRagPrompt } from "./prompts";
+import { rewriteQuery } from "./queryRewriting";
 
 export async function prepareRagPrompt(
   recentMessageText: string,
   conversation: ModelMessage[],
 ) {
-  // QUERY REWRITING
-  const { output: query } = await generateText({
-    model: google("gemini-2.5-flash-lite"),
-    prompt: recentMessageText,
-    system: RAG_REWRITE_QUERY_PROMPT,
-    output: Output.object({
-      schema: RAGRewriteSchema,
-    }),
-  });
+  // rewrite query
+  const userQuery = await rewriteQuery(recentMessageText);
 
-  console.log("=========================");
-  console.log(query.userQuery);
   // RAG API
   const body: RAGRequest = {
-    query_text: query.userQuery,
+    query_text: userQuery,
     top_k: 5,
     alpha: 0.5,
   };
