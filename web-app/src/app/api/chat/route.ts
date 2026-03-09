@@ -1,13 +1,10 @@
 // prettier-ignore
-import { streamText, UIMessage, convertToModelMessages, createUIMessageStreamResponse, createUIMessageStream,
-  generateText, Output,
-  ModelMessage} from "ai";
+import { streamText, UIMessage, convertToModelMessages, createUIMessageStreamResponse, createUIMessageStream, ModelMessage} from "ai";
 import { google } from "@ai-sdk/google";
 // prettier-ignore
-import { INTENT_SYSTEM_PROMPT, LEGAL_SYSTEM_PROMPT} from "@/src/helpers/ai/prompts";
+import { LEGAL_SYSTEM_PROMPT} from "@/src/helpers/ai/prompts";
 // prettier-ignore
-import { intentSchema } from "@/src/types/intent"
-import { writeFallBackMessage } from "@/src/helpers/ai/intent";
+import { extractUserIntent, writeFallBackMessage } from "@/src/helpers/ai/intent";
 import { prepareRagPrompt } from "@/src/helpers/ai/rag";
 import { generateConversationTitle } from "@/src/helpers/ai/generateTitle";
 
@@ -21,15 +18,8 @@ export async function POST(req: Request) {
   };
   const conversation: ModelMessage[] = await convertToModelMessages(messages);
 
-  // 2. Parse user intent
-  const { output: intent } = await generateText({
-    model: google("gemini-2.5-flash-lite"),
-    messages: conversation,
-    system: INTENT_SYSTEM_PROMPT,
-    output: Output.object({
-      schema: intentSchema,
-    }),
-  });
+  // 2. Extract user intent
+  const intent = await extractUserIntent(conversation);
 
   // 3. Execute stream of llm calls
   const stream = createUIMessageStream({

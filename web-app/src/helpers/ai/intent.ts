@@ -1,4 +1,7 @@
-import { UIMessageStreamWriter } from "ai";
+import { generateText, ModelMessage, Output, UIMessageStreamWriter } from "ai";
+import { google } from "@ai-sdk/google";
+import { INTENT_SYSTEM_PROMPT } from "./prompts";
+import { intentSchema } from "@/src/types/intent";
 
 export function writeFallBackMessage(
   writer: UIMessageStreamWriter,
@@ -20,4 +23,18 @@ export function writeFallBackMessage(
   });
   // 3. Tell the UI the message is finished streaming
   writer.write({ type: "text-end", id: fallbackId });
+}
+
+export async function extractUserIntent(conversation: ModelMessage[]) {
+  // 2. Parse user intent
+  const { output: intent } = await generateText({
+    model: google("gemini-2.5-flash-lite"),
+    messages: conversation,
+    system: INTENT_SYSTEM_PROMPT,
+    output: Output.object({
+      schema: intentSchema,
+    }),
+  });
+
+  return intent;
 }
