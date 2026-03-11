@@ -1,5 +1,6 @@
 import { z } from "zod";
 
-export const intentSchema = z.object({
+export const QueryRouterSchema = z.object({
   userIntent: z.enum(["search", "chat", "none"]),
+  rewritten_query: z.string(),
 });

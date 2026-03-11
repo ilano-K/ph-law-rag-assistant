@@ -1,17 +1,13 @@
 // prettier-ignore
 import { RAGRequest, RAGResponse,RAGResult} from "@/src/types/retrieval";
 import { ModelMessage } from "ai";
-import { buildRagPrompt } from "./prompts";
-import { rewriteQuery } from "./queryRewriting";
+import { buildRagPrompt } from "../helpers/prompts";
 
 export async function prepareRagPrompt(
   recentMessageText: string,
+  userQuery: string,
   conversation: ModelMessage[],
 ) {
-
-  // rewrite query
-  const userQuery = await rewriteQuery(recentMessageText);
-
   // RAG API
   const body: RAGRequest = {
     query_text: userQuery,
