@@ -8,6 +8,7 @@ export async function prepareRagPrompt(
   recentMessageText: string,
   conversation: ModelMessage[],
 ) {
+
   // rewrite query
   const userQuery = await rewriteQuery(recentMessageText);
 

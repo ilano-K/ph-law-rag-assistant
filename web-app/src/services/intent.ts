@@ -2,6 +2,7 @@ import { generateText, ModelMessage, Output, UIMessageStreamWriter } from "ai";
 import { google } from "@ai-sdk/google";
 import { INTENT_SYSTEM_PROMPT } from "./prompts";
 import { intentSchema } from "@/src/types/intent";
+import { models } from "../ai/models";
 
 export function writeFallBackMessage(
   writer: UIMessageStreamWriter,
@@ -28,7 +29,7 @@ export function writeFallBackMessage(
 export async function extractUserIntent(conversation: ModelMessage[]) {
   // 2. Parse user intent
   const { output: intent } = await generateText({
-    model: google("gemini-2.5-flash-lite"),
+    model: models.geminiFast,
     messages: conversation,
     system: INTENT_SYSTEM_PROMPT,
     output: Output.object({
