@@ -1,13 +1,14 @@
-"use client"; // Required for Vercel AI SDK hooks
+"use client";
 
-import MarkdownRenderer from "./MarkdownRenderer";
 import React, { useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
-import { ArrowUp, Scale } from "lucide-react"; // Assuming you are using lucide-react
+import { ChatInput } from "./ChatInput";
+import { ChatMessage } from "./ChatMessage";
 
 export default function ChatView() {
   const [chatTitle, setChatTitle] = useState("");
   const [input, setInput] = useState("");
+
   const { messages, sendMessage } = useChat({
     onData: (dataPart) => {
       if (dataPart.type === "data-title") {
@@ -17,37 +18,26 @@ export default function ChatView() {
     },
   });
 
-  const textareaRefEmpty = useRef<HTMLTextAreaElement>(null);
-  const textareaRefActive = useRef<HTMLTextAreaElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // resizing logic
-  const onTextareaChange = (
-    e: React.ChangeEvent<HTMLTextAreaElement>,
-    ref: React.RefObject<HTMLTextAreaElement | null>,
-  ) => {
+  const onTextareaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setInput(e.target.value);
-
-    const el = ref.current;
-    if (el) {
-      el.style.height = "auto";
-      el.style.height = el.scrollHeight + "px";
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto";
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
   };
 
-  // submit logic
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
 
-    // sendMessage
     sendMessage({ text: input });
     setInput("");
 
-    // Reset heights
-    if (textareaRefEmpty.current)
-      textareaRefEmpty.current.style.height = "auto";
-    if (textareaRefActive.current)
-      textareaRefActive.current.style.height = "auto";
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto";
+    }
   };
 
   const onKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
@@ -57,105 +47,48 @@ export default function ChatView() {
     }
   };
 
+  const isEmpty = messages.length === 0;
+
   return (
     <div className="flex flex-col h-full w-full relative">
-      {messages.length === 0 ? (
+      {isEmpty ? (
         /* --- EMPTY STATE (New Thread) --- */
         <div className="flex flex-col items-center justify-center h-full">
           <div className="mb-10 text-3xl font-legal text-center text-gradient-accent font-bold">
             What law would you like to explore today?
           </div>
-
-          <form
+          <ChatInput
+            input={input}
+            textareaRef={textareaRef}
+            onChange={onTextareaChange}
+            onKeyDown={onKeyDown}
             onSubmit={handleFormSubmit}
-            className="flex items-center w-[800px] max-w-full rounded-full py-2 px-4 bg-gradient-accent-blur mb-40"
-          >
-            <textarea
-              ref={textareaRefEmpty}
-              value={input}
-              onChange={(e) => onTextareaChange(e, textareaRefEmpty)}
-              onKeyDown={onKeyDown}
-              rows={1}
-              className="flex-1 ml-4 outline-none bg-transparent text-foreground placeholder-foreground/70 resize-none overflow-hidden"
-              placeholder="Type a law, e.g., RA 7610..."
-            />
-            <button
-              type="submit"
-              className="flex justify-center items-center bg-white rounded-full w-10 h-10 ml-2 cursor-pointer hover:bg-gray-200 transition-colors"
-            >
-              <ArrowUp size={24} className="text-background" />
-            </button>
-          </form>
+            placeholder="Type a law, e.g., RA 7610..."
+            className="mb-40"
+          />
         </div>
       ) : (
         /* --- ACTIVE CHAT STATE --- */
-        <div className="flex flex-col h-full">
-          <div className="flex w-full h-15 justify-center items-center p-2">
+        <div className="flex flex-col h-full overflow-hidden">
+          <div className="flex w-full h-15 justify-center items-center p-2 shrink-0">
             <span className="font-bold">{chatTitle}</span>
           </div>
 
           <div className="flex-1 p-8 space-y-8 w-full max-w-4xl mx-auto overflow-y-auto hide-scrollbar">
             {messages.map((msg) => (
-              <div
-                key={msg.id}
-                className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-              >
-                {msg.role === "assistant" && (
-                  <div className="w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center mr-3 mt-1 shrink-0">
-                    <Scale size={16} />
-                  </div>
-                )}
-
-                <div
-                  className={`px-6 max-w-[80%] ${
-                    msg.role === "user"
-                      ? "bg-surface border border-border rounded-3xl rounded-tr-sm text-foreground py-4"
-                      : "bg-transparent text-foreground leading-relaxed pb-4"
-                  }`}
-                >
-                  {/* Documentation v4 uses 'parts' to handle complex message types */}
-                  {msg.parts.map((part, i) => {
-                    if (part.type === "text") {
-                      return (
-                        /* Move the key and classes to the div to stop the TS error */
-                        <div
-                          key={`${msg.id}-${i}`}
-                          className="max-w-none text-foreground"
-                        >
-                          <MarkdownRenderer key={i}>
-                            {part.text}
-                          </MarkdownRenderer>
-                        </div>
-                      );
-                    }
-                    return null;
-                  })}
-                </div>
-              </div>
+              <ChatMessage key={msg.id} msg={msg} />
             ))}
           </div>
 
-          <div className="p-6 flex justify-center">
-            <form
+          <div className="p-6 flex justify-center shrink-0">
+            <ChatInput
+              input={input}
+              textareaRef={textareaRef}
+              onChange={onTextareaChange}
+              onKeyDown={onKeyDown}
               onSubmit={handleFormSubmit}
-              className="flex items-center w-[800px] max-w-full rounded-full py-2 px-4 bg-gradient-accent-blur"
-            >
-              <textarea
-                ref={textareaRefActive}
-                value={input}
-                onChange={(e) => onTextareaChange(e, textareaRefActive)}
-                onKeyDown={onKeyDown}
-                rows={1}
-                className="flex-1 ml-4 outline-none bg-transparent text-foreground placeholder-foreground/70 resize-none overflow-hidden"
-                placeholder="Ask a follow-up question..."
-              />
-              <button
-                type="submit"
-                className="flex justify-center items-center bg-white rounded-full w-10 h-10 ml-2 cursor-pointer hover:bg-gray-200 transition-colors"
-              >
-                <ArrowUp size={24} className="text-background" />
-              </button>
-            </form>
+              placeholder="Ask a follow-up question..."
+            />
           </div>
         </div>
       )}
