@@ -1,11 +1,12 @@
 // prettier-ignore
 import { streamText, UIMessage, convertToModelMessages, createUIMessageStreamResponse, createUIMessageStream, ModelMessage} from "ai";
 // prettier-ignore
-import { LEGAL_SYSTEM_PROMPT} from "@/src/helpers/prompts";
+import { LEGAL_SYSTEM_PROMPT} from "@/src/helpers/ai/prompts";
 // prettier-ignore
 import { routeUserQuery, writeFallBackMessage } from "@/src/services/routeUserQueryService";
 import { prepareRagPrompt } from "@/src/services/ragService";
 import { models } from "@/src/ai/models";
+import { generateConversationTitle } from "@/src/services/generateTitleService";
 
 export async function POST(req: Request) {
   // 1. Messages
@@ -24,8 +25,8 @@ export async function POST(req: Request) {
   // 3. Execute stream of llm calls
   const stream = createUIMessageStream({
     async execute({ writer }) {
-      // if (messages.length === 1)
-      //   generateConversationTitle(writer, firstMessage?.text);
+      if (messages.length === 1)
+        generateConversationTitle(writer, firstMessage?.text);
       // comment for now for less token consumption
       // intent
       if (userIntent === "search") {
@@ -33,7 +34,14 @@ export async function POST(req: Request) {
         const searchQuery = rewritten_query
           ? rewritten_query
           : recentMessage?.text;
-        await prepareRagPrompt(recentMessage?.text, searchQuery, conversation);
+        const updatedConversation = await prepareRagPrompt(
+          recentMessage?.text,
+          searchQuery,
+          conversation,
+          writer,
+        );
+
+        if (!updatedConversation) return;
       } else if (userIntent === "none") {
         writeFallBackMessage(writer);
         return;

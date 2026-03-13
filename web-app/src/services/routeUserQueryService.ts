@@ -1,5 +1,5 @@
 import { generateText, ModelMessage, Output, UIMessageStreamWriter } from "ai";
-import { ROUTER_SYSTEM_PROMPT } from "../helpers/prompts";
+import { ROUTER_SYSTEM_PROMPT } from "../helpers/ai/prompts";
 import { QueryRouterSchema } from "@/src/types/intent";
 import { models } from "../ai/models";
 

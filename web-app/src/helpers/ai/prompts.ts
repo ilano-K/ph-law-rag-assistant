@@ -1,4 +1,4 @@
-import { DocMetadata } from "../types/retrieval";
+import { DocMetadata } from "../../types/retrieval";
 
 export const buildRagPrompt = (userQuery: string, context: DocMetadata[]) => {
   const formattedContext = context.map((metadata: DocMetadata) =>
