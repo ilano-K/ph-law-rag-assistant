@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar/Sidebar";
 import ChatView from "../components/chat/ChatView";
 import HistoryView from "../views/HistoryView";
 import DiscoverView from "../views/DiscoverView";
+import HeaderBar from "../components/Header";
 
 export default function Home() {
   // State variable. Set as Chat by default
@@ -13,15 +14,19 @@ export default function Home() {
   );
 
   return (
-    <main className="flex h-screen w-screen bg-background p-4 gap-4">
-      {/* Pass the set active view on the sidebar */}
-      <Sidebar onViewChange={setActiveView} />
+    <main className="p-12 h-screen w-screen">
+      <div className="flex rounded-[28px] h-full w-full bg-white/10 p-4 gap-4">
+        <Sidebar onViewChange={setActiveView} />
 
-      <div className="flex-1 bg-surface border border-border rounded-xl overflow-hidden">
-        {/* Conditionally render the correct component based on the activeView state */}
-        {activeView === "chat" && <ChatView />}
-        {activeView === "history" && <HistoryView />}
-        {activeView === "discover" && <DiscoverView />}
+        <div className="flex flex-1 flex-col px-6">
+          <HeaderBar />
+          <div className="flex-1 bg-white/10 rounded-[24px] overflow-hidden">
+            {/* Conditionally render the correct component based on the activeView state */}
+            {activeView === "chat" && <ChatView />}
+            {activeView === "history" && <HistoryView />}
+            {activeView === "discover" && <DiscoverView />}
+          </div>
+        </div>
       </div>
     </main>
   );

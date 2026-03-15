@@ -23,7 +23,7 @@ export function ChatInput({
   return (
     <form
       onSubmit={onSubmit}
-      className={`flex items-center w-[800px] max-w-full rounded-full py-2 px-4 bg-gradient-accent-blur ${className}`}
+      className={`flex items-center w-[800px] max-w-full rounded-full py-2 px-4 bg-black/43 ${className}`}
     >
       <textarea
         ref={textareaRef}

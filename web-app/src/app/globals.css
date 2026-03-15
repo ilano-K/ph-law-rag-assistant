@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background: radial-gradient(circle at 50% 50%, #7a504c, rgb(16, 11, 22));
   color: var(--color-foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }

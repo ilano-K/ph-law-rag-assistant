@@ -54,8 +54,8 @@ export default function ChatView() {
       {isEmpty ? (
         /* --- EMPTY STATE (New Thread) --- */
         <div className="flex flex-col items-center justify-center h-full">
-          <div className="mb-10 text-3xl font-legal text-center text-gradient-accent font-bold">
-            What law would you like to explore today?
+          <div className="mb-10 text-3xl font-legal text-center text-white font-bold">
+            Stupid.ai
           </div>
           <ChatInput
             input={input}
