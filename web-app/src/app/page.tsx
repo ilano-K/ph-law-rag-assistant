@@ -19,7 +19,7 @@ export default function Home() {
         <Sidebar onViewChange={setActiveView} />
 
         <div className="flex flex-1 flex-col px-6">
-          <HeaderBar />
+          <HeaderBar title={activeView} />
           <div className="flex-1 bg-white/10 rounded-[24px] overflow-hidden">
             {/* Conditionally render the correct component based on the activeView state */}
             {activeView === "chat" && <ChatView />}
