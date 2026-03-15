@@ -11,7 +11,7 @@ export function ChatMessage({ msg }: ChatMessageProps) {
   return (
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full bg-accent/20 text-accent flex items-center justify-center mr-3 mt-1 shrink-0">
+        <div className="w-8 h-8 rounded-full bg-surface/80 text-white flex items-center justify-center mr-3 mt-1 shrink-0">
           <Scale size={16} />
         </div>
       )}
@@ -19,7 +19,7 @@ export function ChatMessage({ msg }: ChatMessageProps) {
       <div
         className={`px-6 max-w-[80%] ${
           isUser
-            ? "bg-surface border border-border rounded-3xl rounded-tr-sm text-foreground py-4"
+            ? "bg-surface border border-border rounded-3xl rounded-tr-sm text-foreground py-2"
             : "bg-transparent text-foreground leading-relaxed pb-4"
         }`}
       >
