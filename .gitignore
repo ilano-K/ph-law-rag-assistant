@@ -227,3 +227,6 @@ yarn-error.log*
 
 # Coverage
 coverage/
+scraper/notebooks/upload_data.ipynb
+scraper/scd.json
+/scraper

@@ -8,7 +8,6 @@ import { ChatMessage } from "./ChatMessage";
 export default function ChatView() {
   const [chatTitle, setChatTitle] = useState("");
   const [input, setInput] = useState("");
-
   const { messages, sendMessage } = useChat({
     onData: (dataPart) => {
       if (dataPart.type === "data-title") {
