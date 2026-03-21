@@ -4,7 +4,7 @@ import { useState } from "react";
 import Sidebar from "../components/sidebar/Sidebar";
 import ChatView from "../components/chat/ChatView";
 import HistoryView from "../views/HistoryView";
-import DiscoverView from "../views/DiscoverView";
+import DiscoverView from "../components/discover/DiscoverView";
 import HeaderBar from "../components/Header";
 
 export default function Home() {

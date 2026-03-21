@@ -41,7 +41,7 @@ export default function CaseCard({
     <div className="flex flex-col gap-4 w-full bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl p-6 shadow-xl transition-all hover:border-[#fb6a71]/40 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(251,106,113,0.1)]">
       {/* From the Supabase 'documents' table */}
       <div className="border-b border-white/10 pb-4">
-        <h2 className="text-[#fb6a71] font-bold text-sm tracking-wide">
+        <h2 className="text-accent font-bold text-sm tracking-wide">
           {document.prefix} {document.document_number}
         </h2>
         <h3 className="text-white font-bold text-lg leading-snug">
