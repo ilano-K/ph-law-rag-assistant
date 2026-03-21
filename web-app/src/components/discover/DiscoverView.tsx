@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import CaseCard from "./CaseCard";
 import { Documents } from "../../types/documents";
-import { fetchDocumentsFromSupabase } from "../../services/documentsService";
+import { fetchCases } from "../../services/documentsService";
 import CaseToggle from "./DocumentToggleButton";
 
 export default function DiscoverView() {
@@ -10,7 +10,7 @@ export default function DiscoverView() {
 
   useEffect(() => {
     async function load() {
-      const data = await fetchDocumentsFromSupabase();
+      const data = await fetchCases();
       setCases(data);
     }
     load();

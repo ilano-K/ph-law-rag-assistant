@@ -1,12 +1,34 @@
 import { supabase } from "../helpers/supabase.";
 
-export async function fetchDocumentsFromSupabase() {
-  // THE MAGIC QUERY: Get documents, and also grab their matching child digest rows!
+export async function fetchCases() {
   const { data, error } = await supabase
     .from("documents")
     .select("*, case_digests(*)")
-    .eq("type", "case"); // Only fetch things marked as 'case'
+    .eq("type", "case");
 
+  if (error) {
+    return [];
+  }
+  return data ?? [];
+}
+
+export async function fetchActs() {
+  const { data, error } = await supabase
+    .from("documents")
+    .select("*, act_digests(*)")
+    .eq("type", "case");
+
+  if (error) {
+    return [];
+  }
+  return data ?? [];
+}
+
+export async function fetchRepublicActs() {
+  const { data, error } = await supabase
+    .from("documents")
+    .select("*, republic_act_digests(*)")
+    .eq("type", "case");
   if (error) {
     return [];
   }
