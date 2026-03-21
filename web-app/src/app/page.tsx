@@ -14,7 +14,7 @@ export default function Home() {
   );
 
   return (
-    <main className="p-12 h-screen w-screen">
+    <main className="p-4 h-screen w-screen">
       <div className="flex rounded-[28px] h-full w-full bg-white/10 p-4 gap-4">
         <Sidebar onViewChange={setActiveView} />
 

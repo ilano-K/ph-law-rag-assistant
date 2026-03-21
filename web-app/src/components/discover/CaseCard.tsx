@@ -1,5 +1,7 @@
 "use client";
 
+import { Cases, Documents } from "@/src/types/documents";
+
 // Notice: We removed useState and the 'title' prop entirely.
 // This component now strictly acts as a preview snippet for your Supabase 'facts' data.
 function ContentDisplay({ content }: { content: string | null }) {
@@ -29,8 +31,8 @@ export default function CaseCard({
   document,
   digest,
 }: {
-  document: any;
-  digest: any;
+  document: Documents;
+  digest: Cases;
 }) {
   // If the Supabase digest data didn't load properly, don't crash
   if (!digest) return null;

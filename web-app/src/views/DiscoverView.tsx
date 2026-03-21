@@ -2,9 +2,10 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../helpers/supabase.";
 import CaseCard from "../components/discover/CaseCard";
+import { Documents } from "../types/documents";
 
 export default function DiscoverView() {
-  const [cases, setCases] = useState<any[]>([]);
+  const [cases, setCases] = useState<Documents[]>([]);
 
   useEffect(() => {
     async function fetchCasesFromSupabase() {
@@ -13,7 +14,7 @@ export default function DiscoverView() {
         .from("documents")
         .select("*, case_digests(*)")
         .eq("type", "case"); // Only fetch things marked as 'case'
-
+      console.log(data);
       if (error) {
         console.error("Supabase error:", error);
       } else if (data) {
