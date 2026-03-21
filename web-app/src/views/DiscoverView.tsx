@@ -1,28 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
-import { supabase } from "../helpers/supabase.";
 import CaseCard from "../components/discover/CaseCard";
 import { Documents } from "../types/documents";
+import { fetchDocumentsFromSupabase } from "../services/documentsService";
 
 export default function DiscoverView() {
   const [cases, setCases] = useState<Documents[]>([]);
 
   useEffect(() => {
-    async function fetchCasesFromSupabase() {
-      // THE MAGIC QUERY: Get documents, and also grab their matching child digest rows!
-      const { data, error } = await supabase
-        .from("documents")
-        .select("*, case_digests(*)")
-        .eq("type", "case"); // Only fetch things marked as 'case'
-      console.log(data);
-      if (error) {
-        console.error("Supabase error:", error);
-      } else if (data) {
-        setCases(data);
-      }
+    async function load() {
+      const data = await fetchDocumentsFromSupabase();
+      setCases(data);
     }
-
-    fetchCasesFromSupabase();
+    load();
   }, []);
 
   return (
