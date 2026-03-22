@@ -13,6 +13,7 @@ export async function fetchCases() {
 }
 
 export async function fetchActs() {
+  return [];
   const { data, error } = await supabase
     .from("documents")
     .select("*, act_digests(*)")
@@ -25,6 +26,7 @@ export async function fetchActs() {
 }
 
 export async function fetchRepublicActs() {
+  return [];
   const { data, error } = await supabase
     .from("documents")
     .select("*, republic_act_digests(*)")

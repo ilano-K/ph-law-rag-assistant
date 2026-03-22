@@ -1,9 +1,7 @@
 "use client";
 
-import { Cases, Documents } from "@/src/types/documents";
+import { Document, Filter } from "@/src/types/documents";
 
-// Notice: We removed useState and the 'title' prop entirely.
-// This component now strictly acts as a preview snippet for your Supabase 'facts' data.
 function ContentDisplay({ content }: { content: string | null }) {
   if (!content) return null;
 
@@ -25,18 +23,19 @@ function ContentDisplay({ content }: { content: string | null }) {
     </div>
   );
 }
-
+const contentMap: Record<Filter, (doc: Document) => string> = {
+  Cases: (doc) => doc.case_digests?.[0]?.facts ?? "No digest",
+  Acts: (doc) => doc.law_digests?.[0]?.key_provisions ?? "No law",
+  "Republic Acts": (doc) => doc.law_digests?.[0]?.key_provisions ?? "No law",
+};
 // The Main Card expecting Supabase Data
 export default function CaseCard({
   document,
-  digest,
+  filter,
 }: {
-  document: Documents;
-  digest: Cases;
+  document: Document;
+  filter: Filter;
 }) {
-  // If the Supabase digest data didn't load properly, don't crash
-  if (!digest) return null;
-
   return (
     <div className="flex flex-col gap-4 w-full bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl p-6 shadow-xl transition-all hover:border-[#fb6a71]/40 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(251,106,113,0.1)]">
       {/* From the Supabase 'documents' table */}
@@ -52,7 +51,7 @@ export default function CaseCard({
       {/* From the Supabase 'case_digests' table */}
       <div className="flex flex-col gap-4 pt-2">
         {/* We now only pass the content, no title needed */}
-        <ContentDisplay content={digest.facts} />
+        <ContentDisplay content={contentMap[filter](document)} />
       </div>
     </div>
   );

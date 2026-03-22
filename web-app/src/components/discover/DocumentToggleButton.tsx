@@ -1,4 +1,5 @@
 "use client";
+import { Filter } from "@/src/types/documents";
 import { useState } from "react";
 
 interface ToggleButtonProps {
@@ -34,9 +35,9 @@ function ToggleButton({ label, selected, onClick }: ToggleButtonProps) {
 }
 
 interface CaseToggleProps {
-  filters: string[];
+  filters: Filter[];
   defaultActive?: string;
-  onToggle?: (filter: string) => void;
+  onToggle?: (filter: Filter) => void | Promise<void>;
 }
 
 export default function CaseToggle({
@@ -48,11 +49,9 @@ export default function CaseToggle({
     defaultActive || filters[0],
   );
 
-  function handleToggle(filter: string) {
+  function handleToggle(filter: Filter) {
     setActiveFilter(filter);
-    if (onToggle) {
-      onToggle(filter);
-    }
+    onToggle?.(filter);
   }
 
   return (

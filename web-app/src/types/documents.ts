@@ -1,4 +1,6 @@
-export interface Cases {
+export type Filter = "Cases" | "Acts" | "Republic Acts";
+
+export interface Case {
   id: string;
   document_id: string;
   facts: string;
@@ -6,19 +8,19 @@ export interface Cases {
   ruling: string;
 }
 
-export interface Laws {
+export interface Law {
   id: string;
   key_provisions: string;
   effect: string;
 }
 
-export interface Documents {
+export interface Document {
   id: string;
   type: string;
   prefix: string;
   document_number: string;
   title: string;
   full_content: string;
-  case_digests: Cases[];
-  law_digests: Laws[];
+  case_digests: Case[];
+  law_digests: Law[];
 }
