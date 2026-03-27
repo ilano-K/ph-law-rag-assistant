@@ -1,6 +1,6 @@
 import { generateText, ModelMessage, Output, UIMessageStreamWriter } from "ai";
-import { ROUTER_SYSTEM_PROMPT } from "../helpers/ai/prompts";
-import { QueryRouterSchema } from "@/src/types/intent";
+import { INTENT_SYSTEM_PROMPT } from "../helpers/ai/prompts";
+import { QueryIntentSchema } from "@/src/types/intent";
 import { models } from "../ai/models";
 
 export function writeFallBackMessage(
@@ -25,14 +25,14 @@ export function writeFallBackMessage(
   writer.write({ type: "text-end", id: fallbackId });
 }
 
-export async function routeUserQuery(conversation: ModelMessage[]) {
+export async function classifyUserIntent(conversation: ModelMessage[]) {
   // 2. Parse user intent
   const { output: intent } = await generateText({
     model: models.geminiFast,
     messages: conversation,
-    system: ROUTER_SYSTEM_PROMPT,
+    system: INTENT_SYSTEM_PROMPT,
     output: Output.object({
-      schema: QueryRouterSchema,
+      schema: QueryIntentSchema,
     }),
   });
 

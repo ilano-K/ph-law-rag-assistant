@@ -14,7 +14,7 @@
     "@ai-sdk/react": "^3.0.107",
     "@supabase/supabase-js": "^2.99.3",
     "@tanstack/react-query": "^5.95.2",
-    "ai": "^6.0.116",
+    "ai": "^6.0.140",
     "lucide-react": "^0.575.0",
     "next": "16.1.6",
     "react": "19.2.3",
