@@ -11,4 +11,5 @@ export const models = {
   deepseek: openrouter.chat("deepseek/deepseek-chat"),
   trinity: openrouter.chat("arcee-ai/trinity-large-preview:free"),
   step: openrouter.completion("stepfun/step-3.5-flash:free"),
+  nvidia: openrouter.chat("nvidia/nemotron-3-super-120b-a12b:free"),
 };

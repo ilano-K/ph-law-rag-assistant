@@ -17,7 +17,7 @@ const paramsSchema = z.object({
 });
 export const searchLegalDatabaseTool = tool<
   z.infer<typeof paramsSchema>,
-  DocMetadata[]
+  { text: string; results: DocMetadata[] }
 >({
   description:
     "Search the Philippine republic act archives for relevant context. " +
@@ -26,7 +26,10 @@ export const searchLegalDatabaseTool = tool<
   inputSchema: paramsSchema,
 
   execute: async ({ query }) => {
-    console.log(`[AGENT] Searching vector database for: "${query}"`);
+    const start = new Date().toISOString();
+    console.log(
+      `[AGENT] Searching vector database for: "${query}" at ${start}`,
+    );
 
     const body: RAGRequest = {
       query_text: query,
@@ -58,11 +61,31 @@ export const searchLegalDatabaseTool = tool<
 
       const searchResults: RAGResponse = await searchResponse.json();
 
-      return searchResults.results.map((result: RAGResult) => result.metadata);
+      const end = new Date().toISOString();
+      console.log(`[AGENT] retrieval succeeded for "${query}" at ${end}`);
+      const results: DocMetadata[] = searchResults.results.map(
+        (result: RAGResult) => result.metadata,
+      );
+
+      // Build a concise human-readable summary so the LLM receives text it
+      // can reason over in the conversation stream.
+      const summaryItems = results
+        .slice(0, 5)
+        .map((r, idx) => `${idx + 1}. ${r.title ?? r.title ?? "(no title)"}`);
+      const summary = `Found ${results.length} documents. Top results:\n${summaryItems.join("\n")}`;
+
+      return { text: summary, results };
     } catch (error) {
       clearTimeout(timeoutId);
-      console.error("RAG RETRIEVAL FAILED:", error);
-      return [];
+      console.error(
+        "RAG RETRIEVAL FAILED:",
+        error,
+        `at ${new Date().toISOString()}`,
+      );
+      // Always return the expected tool shape so the Tool type matches.
+      const errText =
+        error instanceof Error ? `${error.message}` : "Retrieval failed";
+      return { text: `RAG retrieval failed: ${errText}`, results: [] };
     }
   },
 });
