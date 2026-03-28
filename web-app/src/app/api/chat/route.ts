@@ -13,7 +13,7 @@ import {
   writeFallBackMessage,
 } from "@/src/services/routeUserQueryService";
 import { models } from "@/src/ai/models";
-// import { generateConversationTitle } from "@/src/services/generateTitleService";
+import { generateConversationTitle } from "@/src/services/generateTitleService";
 import { searchLegalDatabaseTool } from "@/src/helpers/ai/tools";
 
 export async function POST(req: Request) {
@@ -23,14 +23,20 @@ export async function POST(req: Request) {
   );
 
   const conversation: ModelMessage[] = await convertToModelMessages(messages);
-  const firstMessage = conversation.at(1)?.content;
-
   const { userIntent } = await classifyUserIntent(conversation);
   console.log(`this is the user intent: ${userIntent}`);
 
   const stream = createUIMessageStream({
     async execute({ writer }) {
       const execStart = new Date().toISOString();
+      if (messages.length === 1) {
+        const titleContext = messages[0].parts[0] as {
+          type: string;
+          text: string;
+        }; //first user query
+
+        generateConversationTitle(writer, titleContext.text);
+      }
       console.log(
         `[STREAM] execute start userIntent=${userIntent} at ${execStart}`,
       );
