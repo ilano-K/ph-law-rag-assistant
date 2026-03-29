@@ -3,6 +3,7 @@ from typing import Dict, Optional, Any
 
 class RAGRequest(BaseModel):
     query_text: str
+    original_query: str
     top_k: int = Field(
         default=5,
         ge=1,

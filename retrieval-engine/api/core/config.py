@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     PINECONE_API_KEY: str
     PINECONE_INDEX_NAME: str
     
+    # COHERE (RERANKER)
+    COHERE_API_KEY: str
     # Read env file
     model_config = SettingsConfigDict(env_file='.env', env_file_encoding='utf-8')
     
