@@ -2,6 +2,7 @@ import z from "zod";
 
 export type RAGRequest = {
   query_text: string;
+  original_query: string;
   top_k: number;
   alpha: number;
   filters?: filter[];
@@ -32,5 +33,7 @@ export type DocMetadata = {
 };
 
 export const RAGRewriteSchema = z.object({
-    userQuery: z.string().describe("The string containing user reconstructed query.")
-})
+  userQuery: z
+    .string()
+    .describe("The string containing user reconstructed query."),
+});

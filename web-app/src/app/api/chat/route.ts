@@ -6,6 +6,7 @@ import {
   createUIMessageStream,
   ModelMessage,
   generateText,
+  stepCountIs,
 } from "ai";
 import { LEGAL_SYSTEM_PROMPT } from "@/src/helpers/ai/prompts";
 import {
@@ -46,11 +47,18 @@ export async function POST(req: Request) {
         writeFallBackMessage(writer);
         return;
       } else if (userIntent === "search") {
+        const recentUserQuery = messages[messages.length - 1].parts[0] as {
+          type: string;
+          text: string;
+        };
         const { toolResults } = await generateText({
           model: models.nvidia,
           system: LEGAL_SYSTEM_PROMPT,
           messages: conversation,
-          tools: { searchLegalDatabase: searchLegalDatabaseTool },
+          tools: {
+            searchLegalDatabase: searchLegalDatabaseTool(recentUserQuery.text),
+          },
+          stopWhen: stepCountIs(3),
         });
 
         if (toolResults && toolResults.length > 0) {
