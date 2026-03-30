@@ -1,10 +1,10 @@
 from pinecone import Pinecone 
 import cohere
 from api.core.config import settings
-from api.models.response import HybridSearchResponse, SearchResultChunk, LegalMetadata
+from api.models.response import HybridSearchResponse
 from api.models.request import RAGRequest
 from api.services.embeddings import generate_hybrid_vectors
-from fastapi import HTTPException
+from api.services.rerank import rerank_documents
 from api.core.logger import get_logger
 from api.core.exceptions import BaseAppException, EmptyQueryError, NoRelevantLawsFoundError, DatabaseTimeoutError
 
@@ -56,38 +56,11 @@ def process_retrieval_request(request: RAGRequest, cohere_client: cohere.ClientV
         doc_texts = [match.metadata.get("text", "") for match in raw_results.matches]
         
         logger.info(f"Cohere reranking {len(doc_texts)} docs against original_query='{request.original_query}'")
-        rerank_response = cohere_client.rerank(
-            model="rerank-v3.5",
-            query=request.original_query,
-            documents=doc_texts,
-            top_n=request.top_k
-        )
+        reranked = rerank_documents(cohere_client, request.original_query, doc_texts, request.top_k, raw_results)
         
-        logger.info(f"Cohere reranking complete. Extracting Top {request.top_k} results:")
-        safe_matches = []
-        # We use enumerate to get the actual 1st, 2nd, 3rd place ranking for the logs
-        for rank, ranked_item in enumerate(rerank_response.results, start=1):
-            
-            original_match = raw_results.matches[ranked_item.index]
-            metadata_obj = LegalMetadata(**original_match.metadata)
-            
-            chunk = SearchResultChunk(
-                id=original_match.id,
-                score=ranked_item.relevance_score, 
-                metadata=metadata_obj
-            )
-            safe_matches.append(chunk)
-            
-            # 3. The Ultimate Debug Log
-            # Shows the Rank, New Score, Old Score, Law ID, and Title!
-            logger.info(
-                f"  Rank {rank} | "
-                f"New Score: {ranked_item.relevance_score:.4f} (Pinecone: {original_match.score:.4f}) | "
-                f"ID: {metadata_obj.law_id} | Title: {metadata_obj.title[:60]}..."
-            )
         return HybridSearchResponse(
             query=request.query_text,
-            results=safe_matches
+            results=reranked
         )
     except BaseAppException as e:
         logger.warning(f"Business logic error triggered: {e.error_code}")
