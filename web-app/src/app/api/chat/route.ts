@@ -18,12 +18,17 @@ import { generateConversationTitle } from "@/src/services/generateTitleService";
 import { searchLegalDatabaseTool } from "@/src/helpers/ai/tools";
 
 export async function POST(req: Request) {
-  const { messages }: { messages: UIMessage[] } = await req.json();
+  const {
+    messages,
+    conversationId,
+  }: { messages: UIMessage[]; conversationId: string } = await req.json();
   console.log(
     `[API] /api/chat POST received - messages=${messages?.length ?? 0} at ${new Date().toISOString()}`,
   );
-
+  console.log(conversationId);
+  return;
   const conversation: ModelMessage[] = await convertToModelMessages(messages);
+
   const { userIntent } = await classifyUserIntent(conversation);
   console.log(`this is the user intent: ${userIntent}`);
 
