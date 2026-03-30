@@ -3,14 +3,13 @@
 import React, { useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { ChatInput } from "./ChatInput";
-import { generateId } from "ai";
 import { ChatMessage } from "./ChatMessage";
 import { DefaultChatTransport } from "ai";
 
 export default function ChatView() {
   const [chatTitle, setChatTitle] = useState("");
   const [input, setInput] = useState("");
-  const [chatId, setChatId] = useState(() => generateId());
+  const [chatId] = useState(() => crypto.randomUUID());
 
   const { messages, sendMessage } = useChat({
     transport: new DefaultChatTransport({
