@@ -1,5 +1,6 @@
 import { supabase } from "../helpers/supabase.";
 import { content } from "../types/messages";
+
 export async function saveConversation(id: string, title: string) {
   const { error } = await supabase.from("conversations").upsert({
     id: id,

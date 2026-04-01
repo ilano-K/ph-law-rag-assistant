@@ -16,6 +16,10 @@ import {
 import { models } from "@/src/ai/models";
 import { generateConversationTitle } from "@/src/services/generateTitleService";
 import { searchLegalDatabaseTool } from "@/src/helpers/ai/tools";
+import {
+  saveConversation,
+  saveMessage,
+} from "@/src/services/conversationService";
 
 export async function POST(req: Request) {
   const {
@@ -25,9 +29,11 @@ export async function POST(req: Request) {
   console.log(
     `[API] /api/chat POST received - messages=${messages?.length ?? 0} at ${new Date().toISOString()}`,
   );
-  console.log(conversationId);
-  return;
+
   const conversation: ModelMessage[] = await convertToModelMessages(messages);
+  // console.log(conversation.at(0)!["role"]);
+  // const role = conversation.at(0)!["role"];
+  // const content = conversation.at(0)!["content"];
 
   const { userIntent } = await classifyUserIntent(conversation);
   console.log(`this is the user intent: ${userIntent}`);
