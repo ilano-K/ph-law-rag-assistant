@@ -34,11 +34,11 @@ export default function DiscoverView() {
     staleTime: Infinity,
     placeholderData: keepPreviousData,
   });
-
   return (
-    <div className="min-h-screen bg-[#050505] p-8">
-      {/* The new layout wrapper for the toggle */}
-      <div className="w-full flex justify-center">
+    // 1. Changed to just `h-full`. We removed `overflow-hidden` and `h-[100dvh]`
+    // because page.tsx is already doing that for us!
+    <div className="flex flex-col h-full bg-[#050505] pt-8 px-8 pb-0">
+      <div className="w-full flex justify-center shrink-0 mb-6">
         <CaseToggle filters={FILTERS} onToggle={handleToggle} />
       </div>
 
@@ -47,15 +47,19 @@ export default function DiscoverView() {
           Loading jurisprudence...
         </div>
       ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data?.data.map((docItem) => (
-            <CaseCard
-              key={docItem.id}
-              document={docItem}
-              filter={activeFilter}
-            />
-          ))}
-          <button onClick={() => setPage(1)}>test</button>
+        // 2. The scrolling container just fills the rest of the box
+        <div className="flex-1 overflow-y-auto hide-scrollbar min-h-0 pr-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {data?.data.map((docItem) => (
+              <CaseCard
+                key={docItem.id}
+                document={docItem}
+                filter={activeFilter}
+              />
+            ))}
+          </div>
+          {/* 3. Your spacer rests perfectly at the bottom of the rounded box */}
+          <div className="h-12 w-full shrink-0"></div>
         </div>
       )}
     </div>
