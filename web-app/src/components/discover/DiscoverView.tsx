@@ -9,6 +9,7 @@ import {
   fetchRepublicActs,
 } from "../../services/documentsService";
 import CaseToggle from "./DocumentToggleButton";
+import PaginationBar from "./PaginationBar";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 
 const fetchMap: Record<Filter, (page: number) => Promise<DocumentData>> = {
@@ -57,6 +58,13 @@ export default function DiscoverView() {
                 filter={activeFilter}
               />
             ))}
+          </div>
+          <div className="mt-8 mb-4">
+            <PaginationBar
+              currentPage={page}
+              totalPages={2} // Keep this at 2 for your testing!
+              onPageChange={setPage}
+            />
           </div>
           {/* 3. Your spacer rests perfectly at the bottom of the rounded box */}
           <div className="h-12 w-full shrink-0"></div>
