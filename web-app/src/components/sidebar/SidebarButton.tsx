@@ -2,16 +2,11 @@ import { LucideIcon } from "lucide-react";
 
 interface SidebarButtonProps {
   icon: LucideIcon;
-  onClick: () => void;
 }
 
-export default function SidebarButton({
-  icon: Icon,
-  onClick,
-}: SidebarButtonProps) {
+export default function SidebarButton({ icon: Icon }: SidebarButtonProps) {
   return (
     <button
-      onClick={onClick}
       className="
         flex items-center justify-center gap-2 px-4 py-2 rounded-lg
         bg-black text-white
