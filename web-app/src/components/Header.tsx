@@ -4,12 +4,10 @@ import { Circle } from "lucide-react";
 import { usePathname } from "next/navigation"; // 2. Import the Next.js router hook
 
 export default function HeaderBar() {
-  // 3. Grab the current URL (e.g., "/", "/history", or "/discover")
   const pathname = usePathname();
 
-  // 4. Map the URL to the correct title string
   let title = "Chat"; // Default for the root page ("/")
-  
+
   if (pathname === "/history") {
     title = "History";
   } else if (pathname === "/discover") {

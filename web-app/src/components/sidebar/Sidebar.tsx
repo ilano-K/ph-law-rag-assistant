@@ -11,20 +11,17 @@ export default function Sidebar() {
         <Circle size={36} className="text-accent" />
       </div>
       <div className="flex flex-col gap-6 mt-8">
-        
-        {/* 3. Wrap each button in a <Link> pointing to the folder names */}
         <Link href="/">
           <SidebarButton icon={Plus} />
         </Link>
-        
+
         <Link href="/history">
           <SidebarButton icon={History} />
         </Link>
-        
+
         <Link href="/discover">
           <SidebarButton icon={Compass} />
         </Link>
-
       </div>
     </div>
   );

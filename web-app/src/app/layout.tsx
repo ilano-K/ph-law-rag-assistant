@@ -30,24 +30,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* 2. Added bg-[#050505] to your body so the dark theme is global */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#050505]`}
       >
         <Providers>
           <AppWrapper>
-            {/* 3. PASTE YOUR UI SHELL HERE */}
             <main className="p-4 h-screen w-screen">
               <div className="flex rounded-[28px] h-full w-full bg-white/10 p-4 gap-4">
-                {/* Sidebar doesn't need state anymore! */}
                 <Sidebar />
 
                 <div className="flex flex-1 flex-col px-6">
-                  {/* HeaderBar will figure out its own title later */}
                   <HeaderBar />
 
                   <div className="flex-1 bg-white/10 rounded-[24px] overflow-hidden">
-                    {/* Next.js injects page.tsx or discover/page.tsx right here! */}
                     {children}
                   </div>
                 </div>
