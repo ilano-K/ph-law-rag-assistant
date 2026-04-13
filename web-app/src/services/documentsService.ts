@@ -1,4 +1,4 @@
-import { supabase } from "../helpers/supabase.";
+import { supabase } from "../helpers/supabase/client";
 import { Document } from "../types/documents";
 
 export type DocumentData = {
@@ -10,7 +10,7 @@ export type DocumentData = {
 export async function fetchCases(
   page: number = 1,
   pageSize: number = 10,
-): Promise<DocumentData> {
+): Promise<DocumentData> {  
   // 1. calculate range
   const from = (page - 1) * pageSize;
   const to = from + pageSize - 1;

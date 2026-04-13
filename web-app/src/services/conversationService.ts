@@ -1,7 +1,11 @@
-import { supabase } from "../helpers/supabase.";
-import { content } from "../types/messages";
+import { SupabaseClient } from "@supabase/supabase-js";
+import { complexAIContent } from "../types/messages";
 
-export async function saveConversation(id: string, title: string) {
+export async function saveConversation(
+  supabase: SupabaseClient,
+  id: string,
+  title: string,
+) {
   const { error } = await supabase.from("conversations").upsert({
     id: id,
     title: title,
@@ -13,9 +17,10 @@ export async function saveConversation(id: string, title: string) {
 }
 
 export async function saveMessage(
+  supabase: SupabaseClient,
   conversationId: string,
   role: string,
-  content: content,
+  content: complexAIContent,
 ) {
   const { error } = await supabase.from("messages").insert({
     id: crypto.randomUUID(),

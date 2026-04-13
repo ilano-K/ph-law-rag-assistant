@@ -9,7 +9,7 @@ import {
   ToolResultPart,
 } from "ai";
 
-export type content =
+export type complexAIContent =
   | string
   | (TextPart | ImagePart | FilePart)[]
   | (

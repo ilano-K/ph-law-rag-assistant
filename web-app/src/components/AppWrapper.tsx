@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { supabase } from "../helpers/supabase.";
+import { supabase } from "../helpers/supabase/client";
 import { Session } from "@supabase/supabase-js";
 
 export default function AppWrapper({

@@ -38,6 +38,12 @@ export async function POST(req: Request) {
   const { userIntent } = await classifyUserIntent(conversation);
   console.log(`this is the user intent: ${userIntent}`);
 
+  // saving to database
+  // 1. conversation length == 1 -> save conversation
+  // 2. save user message
+  // 3. save ai response message 
+
+
   const stream = createUIMessageStream({
     async execute({ writer }) {
       const execStart = new Date().toISOString();
