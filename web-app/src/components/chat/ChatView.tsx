@@ -13,7 +13,7 @@ export default function ChatView() {
 
   const { messages, sendMessage } = useChat({
     transport: new DefaultChatTransport({
-      api: "api/chat",
+      api: "/api/chat",
       body: { conversationId: chatId },
     }),
     onData: (dataPart) => {

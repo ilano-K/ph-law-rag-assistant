@@ -3,10 +3,12 @@ import { complexAIContent } from "../types/messages";
 
 export async function saveConversation(
   supabase: SupabaseClient,
+  userId: string,
   id: string,
   title: string,
 ) {
   const { error } = await supabase.from("conversations").upsert({
+    user_id: userId,
     id: id,
     title: title,
   });
@@ -18,12 +20,14 @@ export async function saveConversation(
 
 export async function saveMessage(
   supabase: SupabaseClient,
+  userid: string,
   conversationId: string,
   role: string,
   content: complexAIContent,
 ) {
   const { error } = await supabase.from("messages").insert({
     id: crypto.randomUUID(),
+    user_id: userid,
     conversation_id: conversationId,
     role: role,
     content: content,

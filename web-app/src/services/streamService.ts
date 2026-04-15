@@ -13,17 +13,22 @@ import { writeFallBackMessage } from "./routeUserQueryService";
 import { models } from "../ai/models";
 import { LEGAL_SYSTEM_PROMPT } from "../helpers/ai/prompts";
 import { searchLegalDatabaseTool } from "../helpers/ai/tools";
+import { complexAIContent } from "../types/messages";
 
 type stream = {
   messages: UIMessage<unknown, UIDataTypes, UITools>[];
   userIntent: "search" | "none" | "chat";
   conversation: ModelMessage[];
+  onNewChat?: (title: string) => Promise<void>;
+  onAiResponse?: (content: complexAIContent) => Promise<void>;
 };
 
 export async function processChatStream({
   messages,
   userIntent,
   conversation,
+  onNewChat,
+  onAiResponse,
 }: stream) {
   const stream = createUIMessageStream({
     async execute({ writer }) {
@@ -34,7 +39,13 @@ export async function processChatStream({
           text: string;
         }; //first user query
 
-        generateConversationTitle(writer, titleContext.text);
+        const title = await generateConversationTitle(
+          writer,
+          titleContext.text,
+        );
+        if (onNewChat) {
+          await onNewChat(title);
+        }
       }
       console.log(
         `[STREAM] execute start userIntent=${userIntent} at ${execStart}`,
@@ -74,6 +85,11 @@ export async function processChatStream({
         model: models.trinity,
         system: LEGAL_SYSTEM_PROMPT + databaseContext,
         messages: conversation,
+        onFinish: async ({ response }) => {
+          if (onAiResponse) {
+            await onAiResponse(response.messages[0].content);
+          }
+        },
       });
 
       console.log("[STRElAM] merging UI message stream (awaiting completion)");
