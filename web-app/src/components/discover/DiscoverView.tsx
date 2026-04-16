@@ -11,11 +11,16 @@ import {
 import CaseToggle from "./DocumentToggleButton";
 import PaginationBar from "./PaginationBar";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
+import { SupabaseClient } from "@supabase/supabase-js";
+import { createClient } from "@/src/helpers/supabase/client";
 
-const fetchMap: Record<Filter, (page: number) => Promise<DocumentData>> = {
-  Cases: (pages) => fetchCases(pages),
-  Acts: (pages) => fetchActs(pages),
-  "Republic Acts": (pages) => fetchRepublicActs(pages),
+const fetchMap: Record<
+  Filter,
+  (supabase: SupabaseClient, page: number) => Promise<DocumentData>
+> = {
+  Cases: (supabase, pages) => fetchCases(supabase, pages),
+  Acts: (supabase, pages) => fetchActs(supabase, pages),
+  "Republic Acts": (supabase, pages) => fetchRepublicActs(supabase, pages),
 };
 
 const FILTERS: Filter[] = ["Cases", "Republic Acts", "Acts"];
@@ -23,6 +28,7 @@ const FILTERS: Filter[] = ["Cases", "Republic Acts", "Acts"];
 export default function DiscoverView() {
   const [activeFilter, setActiveFilter] = useState<Filter>("Cases");
   const [page, setPage] = useState(1);
+  const supabase = createClient();
 
   const handleToggle = (newFilter: Filter) => {
     setActiveFilter(newFilter);
@@ -31,7 +37,7 @@ export default function DiscoverView() {
   // THE TANSTACK MAGIC:
   const { data, isLoading } = useQuery({
     queryKey: ["documents", activeFilter, page],
-    queryFn: () => fetchMap[activeFilter](page),
+    queryFn: () => fetchMap[activeFilter](supabase, page),
     staleTime: Infinity,
     placeholderData: keepPreviousData,
   });
