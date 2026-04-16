@@ -36,3 +36,33 @@ export async function saveMessage(
     console.error("Supabase error saving conversation: ", error.message);
   }
 }
+
+export async function getUserConversations(
+  supabase: SupabaseClient,
+  userId: string,
+) {
+  const { error } = await supabase
+    .from("conversations")
+    .select("id, title, created_at")
+    .eq("user_id", userId)
+    .order("created_at", { ascending: false });
+
+  if (error) {
+    console.error("Supabase error retrieving conversations:", error.message);
+  }
+}
+
+export async function getChatHistory(
+  supabase: SupabaseClient,
+  conversationId: string,
+) {
+  const { error } = await supabase
+    .from("messages")
+    .select("id, role, content, created_at")
+    .eq("conversation_id", conversationId)
+    .order("created_at", { ascending: true });
+
+  if (error) {
+    console.error("Supabase error retrieving chat history:", error.message);
+  }
+}
