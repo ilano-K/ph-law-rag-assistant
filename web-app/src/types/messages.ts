@@ -21,3 +21,21 @@ export type complexAIContent =
       | ToolApprovalRequest
     )[]
   | ToolContent;
+
+export type Conversation = {
+  id: string;
+  title: string;
+  created_at: string;
+};
+
+export type Conversations = {
+  data: Conversation[];
+};
+
+export type message = {
+  id: string;
+  conversation_id: string;
+  role: "user" | "assistant";
+  content: complexAIContent;
+  created_at: string;
+};

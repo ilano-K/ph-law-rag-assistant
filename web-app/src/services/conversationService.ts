@@ -1,5 +1,9 @@
 import { SupabaseClient } from "@supabase/supabase-js";
-import { complexAIContent } from "../types/messages";
+import {
+  complexAIContent,
+  Conversation,
+  Conversations,
+} from "../types/messages";
 
 export async function saveConversation(
   supabase: SupabaseClient,
@@ -37,11 +41,11 @@ export async function saveMessage(
   }
 }
 
-export async function getUserConversations(
+export async function fetchUserConversations(
   supabase: SupabaseClient,
   userId: string,
-) {
-  const { error } = await supabase
+): Promise<Conversations> {
+  const { data, error } = await supabase
     .from("conversations")
     .select("id, title, created_at")
     .eq("user_id", userId)
@@ -49,14 +53,19 @@ export async function getUserConversations(
 
   if (error) {
     console.error("Supabase error retrieving conversations:", error.message);
+    return { data: [] };
   }
+
+  return {
+    data: data ?? [],
+  };
 }
 
-export async function getChatHistory(
+export async function fetchChatHistory(
   supabase: SupabaseClient,
   conversationId: string,
 ) {
-  const { error } = await supabase
+  const { data, error } = await supabase
     .from("messages")
     .select("id, role, content, created_at")
     .eq("conversation_id", conversationId)
@@ -64,5 +73,9 @@ export async function getChatHistory(
 
   if (error) {
     console.error("Supabase error retrieving chat history:", error.message);
+    return { data: [] };
   }
+  return {
+    data: data ?? [],
+  };
 }

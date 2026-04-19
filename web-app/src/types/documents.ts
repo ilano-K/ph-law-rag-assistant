@@ -1,20 +1,20 @@
 export type Filter = "Cases" | "Acts" | "Republic Acts";
 
-export interface Case {
+export type Case = {
   id: string;
   document_id: string;
   facts: string;
   issue: string;
   ruling: string;
-}
+};
 
-export interface Law {
+export type Law = {
   id: string;
   key_provisions: string;
   effect: string;
-}
+};
 
-export interface Document {
+export type Document = {
   id: string;
   type: string;
   prefix: string;
@@ -23,4 +23,4 @@ export interface Document {
   full_content: string;
   case_digests: Case[];
   law_digests: Law[];
-}
+};
