@@ -1,5 +1,5 @@
 import { generateText, ModelMessage, Output, UIMessageStreamWriter } from "ai";
-import { INTENT_SYSTEM_PROMPT } from "../helpers/ai/prompts";
+import { INTENT_SYSTEM_PROMPT } from "../lib/ai/prompts";
 import { QueryIntentSchema } from "@/src/types/intent";
 import { models } from "../ai/models";
 

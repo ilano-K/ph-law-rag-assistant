@@ -12,7 +12,7 @@ import CaseToggle from "./DocumentToggleButton";
 import PaginationBar from "./PaginationBar";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { SupabaseClient } from "@supabase/supabase-js";
-import { createClient } from "@/src/helpers/supabase/client";
+import { createClient } from "@/src/lib/supabase/client";
 
 const fetchMap: Record<
   Filter,

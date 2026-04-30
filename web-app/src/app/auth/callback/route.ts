@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 // Make sure this path matches where you put your server.ts helper!
-import { createClient } from "@/src/helpers/supabase/server";
+import { createClient } from "@/src/lib/supabase/server";
 
 export async function GET(request: Request) {
   // 1. Parse the URL to find the secret code Google sent back

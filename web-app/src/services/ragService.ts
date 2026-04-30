@@ -1,7 +1,7 @@
 // prettier-ignore
 import { RAGRequest, RAGResponse,RAGResult} from "@/src/types/retrieval";
 import { ModelMessage, UIMessageStreamWriter } from "ai";
-import { buildRagPrompt } from "../helpers/ai/prompts";
+import { buildRagPrompt } from "../lib/ai/prompts";
 import { writeFallBackMessage } from "./routeUserQueryService";
 
 export async function prepareRagPrompt(

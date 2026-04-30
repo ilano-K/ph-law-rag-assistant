@@ -11,8 +11,8 @@ import {
 import { generateConversationTitle } from "./generateTitleService";
 import { writeFallBackMessage } from "./routeUserQueryService";
 import { models } from "../ai/models";
-import { LEGAL_SYSTEM_PROMPT } from "../helpers/ai/prompts";
-import { searchLegalDatabaseTool } from "../helpers/ai/tools";
+import { LEGAL_SYSTEM_PROMPT } from "../lib/ai/prompts";
+import { searchLegalDatabaseTool } from "../lib/ai/tools";
 import { complexAIContent } from "../types/messages";
 
 type stream = {

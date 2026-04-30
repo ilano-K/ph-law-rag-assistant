@@ -1,5 +1,5 @@
 "use client";
-import { createClient } from "@/src/helpers/supabase/client";
+import { createClient } from "@/src/lib/supabase/client";
 import { fetchUserConversations } from "@/src/services/conversationService";
 import { useQuery } from "@tanstack/react-query";
 import ChatHistoryCard from "./ChatHistoryCard";

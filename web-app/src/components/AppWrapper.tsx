@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 // 1. Import the browser client generator instead of a hardcoded instance
 import { Session } from "@supabase/supabase-js";
-import { createClient } from "../helpers/supabase/client";
+import { createClient } from "../lib/supabase/client";
 
 export default function AppWrapper({
   children,
