@@ -1,6 +1,6 @@
 import { convertToModelMessages, streamText, UIMessage } from "ai";
 import { models } from "@/src/ai/models";
-import { saveChat } from "@/src/services/chatService";
+import { saveChat } from "@/src/services/refactoring/chatService";
 import { requireAuth } from "@/src/utils/requireAuth";
 
 export async function POST(req: Request) {

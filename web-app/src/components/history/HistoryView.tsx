@@ -1,6 +1,7 @@
 "use client";
 import { createClient } from "@/src/lib/supabase/client";
 import { fetchUserConversations } from "@/src/services/conversationService";
+import { fetchChats } from "@/src/services/refactoring/chatService";
 import { useQuery } from "@tanstack/react-query";
 import ChatHistoryCard from "./ChatHistoryCard";
 
@@ -23,7 +24,7 @@ export default function HistoryView() {
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["conversation-history", user?.id],
-    queryFn: () => fetchUserConversations(supabase, user!.id),
+    queryFn: () => fetchChats({ userId: user!.id, supabase }),
     enabled: !!user?.id,
   });
 

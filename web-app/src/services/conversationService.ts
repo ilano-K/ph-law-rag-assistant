@@ -1,9 +1,5 @@
 import { SupabaseClient } from "@supabase/supabase-js";
-import {
-  complexAIContent,
-  Conversation,
-  Conversations,
-} from "../types/messages";
+import { complexAIContent, Conversations } from "../types/messages";
 
 export async function saveConversation(
   supabase: SupabaseClient,
