@@ -5,7 +5,7 @@ import { SupabaseClient } from "@supabase/supabase-js";
 type chat = {
   id: string;
   title: string;
-  messages: UIMessage[];
+  messages?: UIMessage[];
   created_at: string;
 };
 
@@ -37,7 +37,7 @@ export async function saveChat({
   }
 }
 
-export async function fetchChats({
+export async function getAllChats({
   userId,
   supabase,
 }: {
@@ -46,13 +46,36 @@ export async function fetchChats({
 }): Promise<userChats> {
   const { data, error } = await supabase
     .from("chats")
-    .select("id, title, messages, created_at")
+    .select("id, title, created_at")
     .eq("user_id", userId)
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.log("Supabase error retrieving user chats");
+    console.log(`Supabase error retrieving user chats ${error}`);
     return { data: [] };
   }
   return { data: data ?? [] };
+}
+
+export async function getChat({
+  chatId,
+  userId,
+  supabase,
+}: {
+  chatId: string;
+  userId: string;
+  supabase: SupabaseClient;
+}): Promise<chat | null> {
+  const { data, error } = await supabase
+    .from("chats")
+    .select("id, title, messages, created_at")
+    .eq("user_id", userId)
+    .eq("id", chatId)
+    .single();
+
+  if (error) {
+    console.log(`Supabase error on retrieving user chat ${error}`);
+    throw new Error(error.message);
+  }
+  return data;
 }

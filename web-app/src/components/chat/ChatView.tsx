@@ -4,14 +4,22 @@ import React, { useRef, useState } from "react";
 import { useChat } from "@ai-sdk/react";
 import { ChatInput } from "./ChatInput";
 import { ChatMessage } from "./ChatMessage";
-import { DefaultChatTransport } from "ai";
+import { DefaultChatTransport, UIMessage } from "ai";
 
-export default function ChatView() {
+export default function ChatView({
+  providedChatId,
+  initialMessages = [],
+}: {
+  initialMessages?: UIMessage[];
+  providedChatId?: string;
+}) {
   const [chatTitle, setChatTitle] = useState("");
   const [input, setInput] = useState("");
-  const [chatId] = useState(() => crypto.randomUUID());
+
+  const [chatId] = useState(() => providedChatId || crypto.randomUUID());
 
   const { messages, sendMessage } = useChat({
+    messages: initialMessages,
     transport: new DefaultChatTransport({
       api: "/api/chat-v2",
       body: { chatId: chatId },
@@ -40,6 +48,10 @@ export default function ChatView() {
 
     sendMessage({ text: input });
     setInput("");
+
+    if (messages.length === 0) {
+      window.history.replaceState({}, "", `/chat/${chatId}`);
+    }
 
     if (textareaRef.current) {
       textareaRef.current.style.height = "auto";
