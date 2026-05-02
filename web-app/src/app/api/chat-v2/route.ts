@@ -1,4 +1,4 @@
-import { convertToModelMessages, streamText, UIMessage } from "ai";
+import { convertToModelMessages, streamText } from "ai";
 import { models } from "@/src/ai/models";
 import { saveChat } from "@/src/services/refactoring/chatService";
 import { requireAuth } from "@/src/utils/requireAuth";
@@ -6,20 +6,17 @@ import { createIdGenerator } from "ai";
 import { generateChatTitle } from "@/src/services/refactoring/aiService";
 
 export async function POST(req: Request) {
-  const { messages, chatId }: { messages: UIMessage[]; chatId: string } =
-    await req.json();
-
-  // auth (user_id + supabase client)
+  const { messages, chatId } = await req.json();
   const auth = await requireAuth();
   if (!auth) return new Response("Unauthorized", { status: 401 });
 
   // check intent
 
-  // generate title for first chat
+  // 1. generate title for first chat in the background
   let titlePromise: Promise<string> | null = null;
   if (messages.length === 1) titlePromise = generateChatTitle({ messages });
 
-  // ai stream
+  // 3. ai stream
   const result = streamText({
     model: models.gemini,
     messages: await convertToModelMessages(messages),

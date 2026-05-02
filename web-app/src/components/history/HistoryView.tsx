@@ -43,7 +43,7 @@ export default function HistoryView() {
           <ChatHistoryCard
             key={conversationItem.id}
             title={conversationItem.title}
-            firstMessage=""
+            firstMessage={conversationItem.first_message ?? ""}
             date={conversationItem.created_at}
             onNavigate={() => router.push(`/chat/${conversationItem.id}`)} //placeholder for now
           />

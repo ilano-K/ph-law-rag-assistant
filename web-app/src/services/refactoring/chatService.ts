@@ -6,6 +6,7 @@ type chat = {
   id: string;
   title: string;
   messages?: UIMessage[];
+  first_message?: string;
   created_at: string;
 };
 
@@ -27,10 +28,16 @@ export async function saveChat({
   supabase: SupabaseClient;
   title?: string;
 }): Promise<void> {
+  const firstMessage = messages[0].parts[0] as {
+    type: string;
+    text: string;
+  };
+
   const { error } = await supabase.from("chats").upsert({
     user_id: userId,
     id: chatId,
     messages: messages,
+    first_message: firstMessage.text,
     ...(title ? { title: title } : {}),
   });
 
@@ -48,7 +55,7 @@ export async function getAllChats({
 }): Promise<userChats> {
   const { data, error } = await supabase
     .from("chats")
-    .select("id, title, created_at")
+    .select("id, title, first_message, created_at")
     .eq("user_id", userId)
     .order("created_at", { ascending: false });
 
