@@ -28,16 +28,17 @@ export default function ChatHistoryCard({
     <div
       onClick={onNavigate}
       // Matches your exact CaseCard glassmorphism and hover physics!
-      // Added cursor-pointer so the whole card feels interactive
-      className="flex flex-col gap-4 w-full bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl p-6 shadow-xl transition-all hover:border-[#fb6a71]/40 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(251,106,113,0.1)] cursor-pointer"
+      // Added 'group' so we can trigger child animations when hovering the card
+      className="flex flex-col gap-4 w-full bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-3xl p-6 shadow-xl transition-all hover:border-[#fb6a71]/40 hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(251,106,113,0.1)] cursor-pointer group"
     >
       {/* Header Section */}
       <div className="border-b border-white/10 pb-4 flex flex-col gap-1">
         {/* Date takes the place of the case prefix */}
-        <span className="text-[#fb6a71] font-bold text-xs tracking-wider">
+        <span className="text-[#fb6a71] font-bold text-xs tracking-wider uppercase">
           {formatDate(date)}
         </span>
-        <h3 className="text-white font-bold text-lg leading-snug line-clamp-1">
+        {/* Title inherits a subtle color shift on card hover */}
+        <h3 className="text-white font-bold text-lg leading-snug line-clamp-1 transition-colors group-hover:text-[#fb6a71]">
           {title}
         </h3>
       </div>
@@ -50,10 +51,11 @@ export default function ChatHistoryCard({
 
         <button
           onClick={(e) => {
-            // Prevent the card's onClick from firing twice if they click the button directly
+            // Prevent the card's onClick from firing twice
             e.stopPropagation();
             if (onNavigate) onNavigate();
           }}
+          // Exact match to your ContentDisplay button
           className="text-[#fb6a71] text-xs font-bold self-start mt-2 hover:text-[#ff8f94] transition-colors focus:outline-none"
         >
           CONTINUE CHAT

@@ -36,16 +36,16 @@ export default function HistoryView() {
   }
 
   return (
-    <div className="flex flex-col h-full w-full p-8 overflow-y-auto hide-scrollbar">
-      <h1 className="text-white text-2xl font-bold mb-6">Chat History</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="flex flex-col h-full w-full p-8 overflow-y-auto hide-scrollbar bg-[#050505]">
+      {/* Changed from grid to flex-col */}
+      <div className="flex flex-col gap-4">
         {data?.data.map((conversationItem) => (
           <ChatHistoryCard
             key={conversationItem.id}
             title={conversationItem.title}
             firstMessage={conversationItem.first_message ?? ""}
             date={conversationItem.created_at}
-            onNavigate={() => router.push(`/chat/${conversationItem.id}`)} //placeholder for now
+            onNavigate={() => router.push(`/chat/${conversationItem.id}`)}
           />
         ))}
       </div>
