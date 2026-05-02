@@ -19,17 +19,19 @@ export async function saveChat({
   messages,
   userId,
   supabase,
+  title,
 }: {
   chatId: string;
   messages: UIMessage[];
   userId: string;
   supabase: SupabaseClient;
+  title?: string;
 }): Promise<void> {
   const { error } = await supabase.from("chats").upsert({
     user_id: userId,
     id: chatId,
     messages: messages,
-    title: "",
+    ...(title ? { title: title } : {}),
   });
 
   if (error) {

@@ -3,6 +3,7 @@ import { models } from "@/src/ai/models";
 import { saveChat } from "@/src/services/refactoring/chatService";
 import { requireAuth } from "@/src/utils/requireAuth";
 import { createIdGenerator } from "ai";
+import { generateChatTitle } from "@/src/services/refactoring/aiService";
 
 export async function POST(req: Request) {
   const { messages, chatId }: { messages: UIMessage[]; chatId: string } =
@@ -11,8 +12,12 @@ export async function POST(req: Request) {
   // auth (user_id + supabase client)
   const auth = await requireAuth();
   if (!auth) return new Response("Unauthorized", { status: 401 });
-  const userId = auth.user.id;
-  const supabase = auth.supabase;
+
+  // check intent
+
+  // generate title for first chat
+  let titlePromise: Promise<string> | null = null;
+  if (messages.length === 1) titlePromise = generateChatTitle({ messages });
 
   // ai stream
   const result = streamText({
@@ -26,8 +31,16 @@ export async function POST(req: Request) {
       prefix: "msg",
       size: 16,
     }), //needs id for server side persistence
-    onFinish: ({ messages }) => {
-      saveChat({ chatId, messages, userId, supabase }); // chat store
+
+    onFinish: async ({ messages }) => {
+      const chatTitle = titlePromise ? await titlePromise : undefined;
+      await saveChat({
+        chatId,
+        messages,
+        userId: auth.user.id,
+        supabase: auth.supabase,
+        title: chatTitle,
+      }); // chat store
     },
   });
 }
